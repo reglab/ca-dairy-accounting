@@ -1,0 +1,9 @@
+Grouping,Group,Places in region,Places exposed,Incidence (%),Population,Population in exposed places (%),Truck-mi,Share of truck-mi (%),Share of exposed population (%),Trucking exposure ratio,Truck-mi per capita,Truck-mi per mi2,People per mi2,Mean share of area within 500 m (%)
+Community type,CDP,572,96,16.8,1699721,21.0,175310.0,37.33,10.47,3.57,0.49,504.5,1028.7,51.5
+Community type,city,117,47,40.2,5567456,54.9,294255.0,62.67,89.53,0.7,0.096,351.0,3646.0,33.1
+Community type,town,2,0,0.0,14245,0.0,0.0,0.0,0.0,,,,,
+Population size,<0.5k,257,23,8.9,45724,12.5,22043.0,4.69,0.17,28.09,3.864,588.1,152.2,62.6
+Population size,0.5-2.5k,180,37,20.6,223581,21.3,54803.0,11.67,1.4,8.35,1.148,702.6,611.9,49.8
+Population size,2.5-10k,142,34,23.9,713805,26.9,89100.0,18.98,5.63,3.37,0.463,470.8,1015.9,48.2
+Population size,10-50k,75,33,44.0,1549568,44.3,95251.0,20.28,20.13,1.01,0.139,380.5,2744.3,33.7
+Population size,>=50k,37,16,43.2,4748744,52.2,208368.0,44.37,72.68,0.61,0.084,330.4,3934.2,29.0

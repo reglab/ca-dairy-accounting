@@ -1,0 +1,54 @@
+# Conda environment for analysis/Analysis.ipynb, the geocode review notebook
+# (review/manifests/geocode-review/) and the annual-report scraper
+# (review/annual-reports/). These are the versions that produced the published
+# outputs, on macOS (arm64). environment-lock-osx-arm64.txt lists every conda
+# package exactly.
+#
+#     conda env create -f environment/environment.yml
+#     conda activate ca-dairy-accounting
+#
+# Always run the notebooks in the ACTIVATED environment. Activation sets
+# PROJ_NETWORK=ON, so pyproj fetches the NOAA HARN datum grids from cdn.proj.org
+# on the first run (internet needed once). Without them the reprojection to
+# EPSG:3310 falls back to a coarser transformation and BlockGroup_Exposure.csv
+# and Figure 4 come out slightly different.
+#
+# analysis/Routing.ipynb needs environment/environment-routing.yml instead, and the
+# manifest extraction notebook needs environment/environment-manifest-extraction.yml.
+name: ca-dairy-accounting
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.14.6
+  # --- core analysis ---
+  - numpy=2.5.1
+  - pandas=3.0.3
+  - scipy=1.18.0
+  # --- geospatial (GEOS and PROJ versions affect overlay and reprojection results) ---
+  - geopandas=1.1.3
+  - shapely=2.1.2
+  - geos=3.10.6
+  - pyproj=3.7.2
+  - proj=9.7.1
+  - pyogrio=0.12.1
+  - libgdal-core=3.13.1
+  - networkx=3.6.1
+  # --- figures ---
+  - matplotlib=3.11.0
+  - seaborn=0.13.2
+  - pillow=12.3.0
+  # pdftocairo converts each figure's PDF to EPS (analysis/Analysis.ipynb, save_figure)
+  - poppler=26.04.0
+  # --- geocoding script (review/annual-reports/geocode_dairy_addresses.py) ---
+  - requests=2.34.2
+  # --- notebook kernel ---
+  - conda-forge::ipykernel=7.3.0
+  - conda-forge::jupyter_core=5.9.1
+  - pip
+  - pip:
+    # Annual-report scraper: PDF text with PyMuPDF, OCR with Apple Vision (macOS only)
+    - pymupdf==1.28.2
+    - pyobjc-framework-Vision==12.2.2
+    - pyobjc-framework-Quartz==12.2.2
+    - pyobjc-framework-Cocoa==12.2.2

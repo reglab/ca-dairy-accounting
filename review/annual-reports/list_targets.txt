@@ -1,0 +1,360 @@
+data/annual-reports/Fresno Madera/Consulting_and_Error_Causing_Forms/2024AR_A & M Farms Dairy_10350 W Manning Ave_Fresno.PDF
+data/annual-reports/Fresno Madera/Consulting_and_Error_Causing_Forms/2024AR_Bar 20 Dairy, LLC_24387 W Whitesbridge Rd_Fresno.pdf
+data/annual-reports/Fresno Madera/Consulting_and_Error_Causing_Forms/2024AR_Fontes Dairy Farms-Dairy #1_5512 W Davis Ave_Fresno.PDF
+data/annual-reports/Fresno Madera/Consulting_and_Error_Causing_Forms/2024AR_Fontes Dairy Farms-Dairy 2_20334 S Polk Ave_Fresno.PDF
+data/annual-reports/Fresno Madera/Consulting_and_Error_Causing_Forms/2024AR_G & A Dairy_2200 S Marks Ave_Fresno.PDF
+data/annual-reports/Fresno Madera/Consulting_and_Error_Causing_Forms/2024AR_Jose D Soares Dairy_19045 Road 1_Madera.pdf
+data/annual-reports/Fresno Madera/Consulting_and_Error_Causing_Forms/2024AR_Kiss Cattle, LLC_2585 S Chateau Fresno Ave_Fresno.PDF
+data/annual-reports/Fresno Madera/Consulting_and_Error_Causing_Forms/2024AR_L & J Vanderham Dairy_10772 W Mt. Whitney Ave_Fresno.PDF
+data/annual-reports/Fresno Madera/Consulting_and_Error_Causing_Forms/2024AR_L & J Vanderham Feedlot_7500 Ave 14_Madera.pdf
+data/annual-reports/Fresno Madera/Consulting_and_Error_Causing_Forms/2024AR_MR Dairy_18899 Road 16_Madera.pdf
+data/annual-reports/Fresno Madera/Consulting_and_Error_Causing_Forms/2024AR_Maple Dairy_19860 Maple St_Fresno.PDF
+data/annual-reports/Fresno Madera/Consulting_and_Error_Causing_Forms/2024AR_Open Sky Dairy_12103 W Elkhorn Ave_Fresno.PDF
+data/annual-reports/Fresno Madera/Consulting_and_Error_Causing_Forms/2024AR_Pacheco Dairy_1108 N Plumas Ave_Fresno.PDF
+data/annual-reports/Fresno Madera/Consulting_and_Error_Causing_Forms/2024AR_Pimentel Dairy_18177 Road 10.5_Madera.PDF
+data/annual-reports/Fresno Madera/Consulting_and_Error_Causing_Forms/2024AR_River Oaks Dairy_3621 E Mt. Whitney Ave_Fresno.PDF
+data/annual-reports/Fresno Madera/Consulting_and_Error_Causing_Forms/2024AR_Silveira Dairy_11277 Ave 21.5_Madera.pdf
+data/annual-reports/Fresno Madera/Consulting_and_Error_Causing_Forms/2024AR_Silveira Heifers (merged w Silveira Dairy)_10221 Ave 21.5_Madera.pdf
+data/annual-reports/Fresno Madera/Consulting_and_Error_Causing_Forms/2024AR_Thommen Dairy_53955 W Nees Ave_Fresno.pdf
+data/annual-reports/Fresno Madera/Consulting_and_Error_Causing_Forms/2024AR_Zonneveld Dairies Complex_1560 Cerini Ave_Fresno.PDF
+data/annual-reports/Kern/Consulting_and_Error_Causing_Forms/2024AR Faial Farms Dairy.pdf
+data/annual-reports/Kern/Consulting_and_Error_Causing_Forms/2024AR G3 Dairy.pdf
+data/annual-reports/Kern/Consulting_and_Error_Causing_Forms/2024AR_AJB Ranch Dairy.pdf
+data/annual-reports/Kern/Consulting_and_Error_Causing_Forms/2024AR_Affentranger & Sons Dairy.pdf
+data/annual-reports/Kern/Consulting_and_Error_Causing_Forms/2024AR_Bear Mountain Dairy.pdf
+data/annual-reports/Kern/Consulting_and_Error_Causing_Forms/2024AR_David Vander Schaaf_7524 South Fairfax Rd_Kern.pdf
+data/annual-reports/Kern/Consulting_and_Error_Causing_Forms/2024AR_Faial Farms 2 Dairy.pdf
+data/annual-reports/Kern/Consulting_and_Error_Causing_Forms/2024AR_Goyenetche Dairy LLC_6041 Brandt Rd_Kern.pdf
+data/annual-reports/Kern/Consulting_and_Error_Causing_Forms/2024AR_H&P Dairy.pdf
+data/annual-reports/Kern/Consulting_and_Error_Causing_Forms/2024AR_J&R Dairy.pdf
+data/annual-reports/Kern/Consulting_and_Error_Causing_Forms/2024AR_Lakeview Farms Dairy.pdf
+data/annual-reports/Kern/Consulting_and_Error_Causing_Forms/2024AR_Maple Dairy.pdf
+data/annual-reports/Kern/Consulting_and_Error_Causing_Forms/2024AR_Mc Moo Farms Dairy.pdf
+data/annual-reports/Kern/Consulting_and_Error_Causing_Forms/2024AR_Newhouse Dairy.pdf
+data/annual-reports/Kern/Consulting_and_Error_Causing_Forms/2024AR_Oasis Holsteins Dairy_18041 Palm Ave_Kern.pdf
+data/annual-reports/Kern/Consulting_and_Error_Causing_Forms/2024AR_Panama Ranch Dairy.pdf
+data/annual-reports/Kern/Consulting_and_Error_Causing_Forms/2024AR_Rosa Dairy.pdf
+data/annual-reports/Kern/Consulting_and_Error_Causing_Forms/2024AR_Skyview Dairy_28989 Riverside St_Kern.pdf
+data/annual-reports/Kern/Consulting_and_Error_Causing_Forms/2024AR_Solo Dairy_11495 Jumper Ave_Kern.pdf
+data/annual-reports/Kern/Consulting_and_Error_Causing_Forms/2024AR_T&W Farms #2 Dairy.pdf
+data/annual-reports/Kern/Consulting_and_Error_Causing_Forms/2024AR_T&W Farms.pdf
+data/annual-reports/Kern/Consulting_and_Error_Causing_Forms/2024AR_Tjaarda Dairy_19211 Magnolia Ave_Kern.pdf
+data/annual-reports/Kern/Consulting_and_Error_Causing_Forms/2024AR_Trilogy Dairy.pdf
+data/annual-reports/Kern/Consulting_and_Error_Causing_Forms/2024AR_Western Sky Dairy.pdf
+data/annual-reports/Kern/Consulting_and_Error_Causing_Forms/2024AR_Westwind Dairy.pdf
+data/annual-reports/Kern/Consulting_and_Error_Causing_Forms/2024AR_Whiteside Dairy_16461 Scofield Ave_Kern.pdf
+data/annual-reports/Kings/Consulting_and_Error_Causing_Forms/2024AR_Backroad Ranch #2_4119 Houston Ave_Kings.PDF
+data/annual-reports/Kings/Consulting_and_Error_Causing_Forms/2024AR_Bill Idsinga Dairy_4595 Houston Ave_Kings.PDF
+data/annual-reports/Kings/Consulting_and_Error_Causing_Forms/2024AR_C&R Dairy_15336 10th Ave_Kings.PDF
+data/annual-reports/Kings/Consulting_and_Error_Causing_Forms/2024AR_Cactus Ranch_8800 Lansing Ave_Kings.PDF
+data/annual-reports/Kings/Consulting_and_Error_Causing_Forms/2024AR_Contente & Co Ranch_5730 20th Ave_Kings.pdf
+data/annual-reports/Kings/Consulting_and_Error_Causing_Forms/2024AR_Cowlifornia Dairy LLC_3742 Lacey Blvd_Kings.PDF
+data/annual-reports/Kings/Consulting_and_Error_Causing_Forms/2024AR_Cunha Dairy #1_6680 16th Ave_Kings.PDF
+data/annual-reports/Kings/Consulting_and_Error_Causing_Forms/2024AR_DeGroot Dairies-North_2446 Grangeville Blvd_Kings.PDF
+data/annual-reports/Kings/Consulting_and_Error_Causing_Forms/2024AR_DeGroot Dairies-South_3101 Granageville Blvd_Kings.PDF
+data/annual-reports/Kings/Consulting_and_Error_Causing_Forms/2024AR_Diamond D LLC Dairy_9423 Idaho Ave_Kings.PDF
+data/annual-reports/Kings/Consulting_and_Error_Causing_Forms/2024AR_Hakker Dairy_12499 Idaho Ave_Kings.PDF
+data/annual-reports/Kings/Consulting_and_Error_Causing_Forms/2024AR_High Roller Dairy_14782 8th Ave_Kings.PDF
+data/annual-reports/Kings/Consulting_and_Error_Causing_Forms/2024AR_Holland_s Dairy_3533 Grangeville Blvd_Kings.PDF
+data/annual-reports/Kings/Consulting_and_Error_Causing_Forms/2024AR_J & A Dairy LLC_16283 18th Avenue_Kings.PDF
+data/annual-reports/Kings/Consulting_and_Error_Causing_Forms/2024AR_Jackson Dairy LLC_8637 Jackson Ave_Kings.PDF
+data/annual-reports/Kings/Consulting_and_Error_Causing_Forms/2024AR_MF Rosa Dairy_10090 2nd Ave_Kings.PDF
+data/annual-reports/Kings/Consulting_and_Error_Causing_Forms/2024AR_Manuel & Alda Lawrence Dairy_12871 Kent Ave_Kings.PDF
+data/annual-reports/Kings/Consulting_and_Error_Causing_Forms/2024AR_Milkaholic Dairy LLC_6267 5th Ave_Kings.PDF
+data/annual-reports/Kings/Consulting_and_Error_Causing_Forms/2024AR_Moonstone Dairy_1305 Iona Avenue_Kings.PDF
+data/annual-reports/Kings/Consulting_and_Error_Causing_Forms/2024AR_Parreira Dairy_18081 17th Ave_Kings.PDF
+data/annual-reports/Kings/Consulting_and_Error_Causing_Forms/2024AR_Poplar Lane Dairy_5387 Kent Avenue_Kings.PDF
+data/annual-reports/Kings/Consulting_and_Error_Causing_Forms/2024AR_River Ranch Dairy_6155 Jackson Ave_Kings.PDF
+data/annual-reports/Kings/Consulting_and_Error_Causing_Forms/2024AR_S&A Dairy_13243 Houston Ave_Kings.pdf
+data/annual-reports/Kings/Consulting_and_Error_Causing_Forms/2024AR_Still Water Ranch LLC_5001 4th Avenue_Kings.PDF
+data/annual-reports/Kings/Consulting_and_Error_Causing_Forms/2024AR_The Dairy Inc_6240 21st Ave_Kings.PDF
+data/annual-reports/Kings/Consulting_and_Error_Causing_Forms/2024AR_Valadao Dairy_17293 9.5 Ave_Kings.PDF
+data/annual-reports/Kings/Consulting_and_Error_Causing_Forms/2024AR_Vitor Borba Dairy #2_16452 11th Ave_Kings.PDF
+data/annual-reports/Kings/Consulting_and_Error_Causing_Forms/2024AR_Vitor Borba Dairy_7721 Flint Ave_Kings.PDF
+data/annual-reports/Kings/Consulting_and_Error_Causing_Forms/2024AR_Vitor Borba Heifers.PDF
+data/annual-reports/Kings/Consulting_and_Error_Causing_Forms/2024AR_West Creek Dairy_8409 5th Ave_Kings.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/1015 W 5th Ave Orland 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/1025 E Armstrong Rd Lodi 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/10268 S Hwy 33 Gustine 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/10561 West Hwy 140 Atwater 2024 Dairy AR .PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/10652 Newsome Rd Gustine 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/10837 Franklin Blvd Elk Grove 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/11076 Vincent Rd, Turlock 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/11132 Shultz Rd El Nido 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/11159 West Peach Street Livingston 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/11775 S Arbor Way El Nido 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/1257 W Roosevelt Rd El Nido 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/12710 S Wilson Rd Los Banos 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/1319 S Quinley Ave Merced 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/13235 S Baker Rd Los Banos 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/13459 S Turner Island Rd Dos Palos 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/1369 S Hunt Rd Gustine 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/13745 Newport Rd, Turlock 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/13831 East Ave, Turlock 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/14651 Carlucci Rd Dos Palos 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/14903 S Volta Rd Los Banos 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/1499 Edminster Rd, Stevinson 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/15373 S Flanagan Rd Dos Palos 2024 Poultry AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/15475 W Henry Miller Rd 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/15782 Arroya Ave Dos Palos 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/16489 August Ave Delhi 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/19490 Draper Rd Cottonwood 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/1980 County Rd QQ Willows 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/201 Dairy Rd, Davis 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/2031 Washington Rd El Nido 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/20967 Paradise Rd Tracy 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/21330 W Second Ave, Stevinson 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/21625 Geer Ave, Hilmar 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/22484 China Camp Rd Los Banos 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/22495 W China Camp Rd Los Banos 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/22759 S Mercy Springs Rd Los Banos 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/2439 County Rd V Glenn 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/24916 S Manteca Rd Manteca 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/25115 Clark Ave Orland 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/2630 County Rd T Glenn 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/26380 W Fahey Rd Gustine 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/27890 W Brazo Rd Newman 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/28471 W Hulen Rd Gustine 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/2892 N Gurr Rd Atwater 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/29191 W Husman Rd Gustine 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/29687 Fentem Rd Gustine 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/311 Nicholas C Schouten Ln Chico 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/3130 De Witt Rd Modesto 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/3355 Virginia Rd Wheatland 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/3701 Langworth Rd Modesto 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/3754 Virginia Rd Wheatland 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/3874 N Franklin Rd Merced 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/3991 Lander Ave, Stevinson 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/4235 Oak Ave Merced 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/4390 N Fox Rd Merced 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/4501 Virginia Rd Marysville 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/4715 County Rd N Rd Orland 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/4740 County Rd QQ Orland 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/485 Capay Rd Orland 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/511 Applegate Rd Atwater 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/519 E Stuhr Rd Newman 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/5201 Milnes Rd Modesto 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/5245 S Hwy 33 Gustine 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/5615 Ave 24 Chowchilla 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/5672 Whitworth Rd Gustine 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/5943 County Rd 17 Orland 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/5944 County Rd 17 Orland 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/6259 County Rd 25 Orland 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/6706 Elaine RD, Turlock 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/6756 County Rd 30 Orland 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/7084 County Rd 31 Orland 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/7581 N Merced Ave 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/7618 S Hwy 59 El Nido 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/7689 Washington Rd, Hilmar 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/7755 Midway Rd Dixon 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/7831 Capay Ave Orland 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/7884 Faith Home Rd, Hilmar 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/7965 Washington Rd, Hilmar 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/8207 Crows Landing Road 2024 Bovine AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/825 Ruble Rd Crows Landing 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/8350 E Brady Ave Manteca 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/870 Kniebes Rd Gustine 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/9201 Hilmar Rd Turlock 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/9207 American Ave Hilmar 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/931 S Blaker Rd Turlock 2024 Dairy AR.PDF
+data/annual-reports/Rancho Cordova/Consulting_and_Error_Causing_Forms/9558 Columbus Ave, Hilmar 2024 Dairy AR.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_4 Corners Dairy_14976 Ave 168_Tulare.pdf
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_A.M. Dairy_8651 Ave 388_Tulare.pdf
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Avenue 128 Dairy_13002 Ave 128_Tulare.pdf
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Boertje Farms_37190 Rd 132_Tulare.pdf
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Borba & Sons_13511 Rd 120_Tulare.pdf
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Borges Dairy_16371 Rd 136_Tulare.pdf
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Bosch Dairy Farms_1260 S Mariposa Ave_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_COS Dairy_12764 Ave 224_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Chris & John Jongsma Dairy_15759 Ave 128_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Chris De Jong Dairy_14763 Rd168_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Cream Top Dairy_13075 Ave 200_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Cross Creek Dairy_10167 Ave 352_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_D & V Dairy_15625 Ave 144_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_DG Farms_15419 Ave 96_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Dairyland Farms Dairy_15982 RD 152_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_De Jong Dairy Farms Inc_13076 Ave 368_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Double J Dairy_6656 Ave 328_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Double M Jerseys_11595 Ave 164_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_East Ridge Farms_14153 Rd 168_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_East View Dairy_10485 Ave 352_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Ed Souza & Son Dairy_15390 Ave 244_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Elbow Creek Dairy_34537 Rd 124_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Elkhorn Dairy_10400 Ave 368_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_FM Jersey Dairy_16301 Rd 124_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_FM Ranch #3_1474 Hwy 99_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Faria Farms Inc. Dairy_13927 Rd 136_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Fern Oak Farms Dairy_17001 Ave 160_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Fernridge Farms_11679 Ave 200_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Five Star Dairy_14552 Ave 152_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_G-P Dairy_8676 Ave 360_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_GTA Dairy_16197 Ave 172_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Gerben Leyendekker Dairy #1_8517 Ave 360_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Henry A Garcia & Son Dairy_12521 Ave 200_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Highstreet Dairy_15503 Ave 240_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Hilarides Dairy_24163 Rd 188_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Hoffman Dairy_Riverbend Dairy_21346 Rd 140_Tulare.pdf
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Homestead Dairy_10178 Ave 352_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Jacobus De Groot Dairy #2_10438 Ave 320_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Jacobus DeGroot Dairy #1_31847 Rd 92_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Jesse and James Jongsma Dairy_9229 Rd 164_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Joe C Pires Jr Dairy_13806 Ave 152_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_John Jongsma Dairy_15434 Ave 192_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_K A Vanderham Dairy_12565 Ave 152_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Kampen Ranches Dairy_33689 Rd 108_Tulare.pdf
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Lawrence Family Farms Dairy_14760 Ave 208_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Little Ranch Dairy_13167 Rd 144_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Lou-Mar Dairy_14870 Ave 152_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Louie De Groot Dairy_15081 Ave 104_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Mellema Calf Ranch_32210 Rd 92_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Mellema Dairy_9420 Ave 320_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Mellema West Dairy_9232 Ave 320_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Mendonsa Family Farms Dairy_12750 Ave 160_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Middle Ranch Facility_13805 Ave 160_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Milk Maid Dairy_35826 Rd 100_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Mountain View Dairy_37455 Rd 144_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Nunes & Sond Dairy_690 E Oakdale Ave_Tulare.pdf
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Oakbend Dairy_23561 Rd 168_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Oakbend South Dairy_15651 Ave 192_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Outlaw Dairy_12735 Ave 192_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Parreira Gasper Dairy_16087 Ave 188_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Pires Dairy_13464 Ave 152_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Rainimade Dairy #2_34308 Rd 124_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Rainimade Dairy_33640 Rd 124_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Rancho Sierra Vista Dairy_32866 Rd 108_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Red Rose Dairy_8950 Ave 360_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Rijlaarsdam Dairy_12031 Ave 352_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Riverbend Dairy_20799 Rd 132_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Riverbend East Dairy_20303 Rd 140_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Rob Van Grouw Dairy_32843 Rd 76_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Rui and Jennifer Brasil Dairy_8061 Ave 360_Tulare.pdf
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Santos Jer-Z Dairy_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Shirk Dairy_2820 S Shirk Rd_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Sierra View Dairy+13376 Ave 224_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Skyline Dairy_15992 Ave 192_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_South Corner Dairy_8150 Ave 360_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Sunset Ranch_19493 Rd 140_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Tipton Dairy_196 Olive Ave_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Top O_ The Morn Farms_17324 Rd 136_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Tri Bak Dairy LLC_9045 Ave 368_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Triple H Dairy #1_13255 Ave 212_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Vander Tuig Dairy_20127 Rd 164_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Vintage Dairy_12608 Rd 144_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_West Wing Dairy_20997 Rd 180_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Western Pacific Dairy_14854 Ave 120_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Will De Groot Dairy_15471 Ave 104_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_William & John Jongsma Dairy_11598 Rd 152_Tulare.PDF
+data/annual-reports/Tulare East/Consulting_and_Error_Causing_Forms/2024AR_Yettem Dairy_37943 Rd 144_Tulare.pdf
+data/annual-reports/Tulare West/Consulting_and_Error_Causing_Forms/2024AR_Back Road Dairy_22000 Road 28_W Tulare.PDF
+data/annual-reports/Tulare West/Consulting_and_Error_Causing_Forms/2024AR_Blue Moon Farms_13213 Road 80_W Tulare.PDF
+data/annual-reports/Tulare West/Consulting_and_Error_Causing_Forms/2024AR_Brian James Jongsma Dairy_16026 Road 64_W Tulare.PDF
+data/annual-reports/Tulare West/Consulting_and_Error_Causing_Forms/2024AR_DJ Dairy_4390 Avenue 352_W Tulare.PDF
+data/annual-reports/Tulare West/Consulting_and_Error_Causing_Forms/2024AR_Decade Dairy_3313 Avenue 256_W Tulare.PDF
+data/annual-reports/Tulare West/Consulting_and_Error_Causing_Forms/2024AR_F & L Barcellos #2_7585 Avenue 152_W Tulare.PDF
+data/annual-reports/Tulare West/Consulting_and_Error_Causing_Forms/2024AR_JZB #2 Heifer Ranch_20798 Road 28_W Tulare.PDF
+data/annual-reports/Tulare West/Consulting_and_Error_Causing_Forms/2024AR_Jer-Z Boys Dairy #1_11001 Avenue 112_W Tulare.PDF
+data/annual-reports/Tulare West/Consulting_and_Error_Causing_Forms/2024AR_John Vander Poel Dairy (Pixley)_8001 Road 104_W Tulare.PDF
+data/annual-reports/Tulare West/Consulting_and_Error_Causing_Forms/2024AR_K & M Visser Dairy_9279 Avenue 96_W Tulare.PDF
+data/annual-reports/Tulare West/Consulting_and_Error_Causing_Forms/2024AR_LegenDairy Farms Dairy_14685 Road 96_W Tulare.PDF
+data/annual-reports/Tulare West/Consulting_and_Error_Causing_Forms/2024AR_LegenDairy South_8360 Avenue 144_W Tulare.PDF
+data/annual-reports/Tulare West/Consulting_and_Error_Causing_Forms/2024AR_MS Monteiro & Sons Dairy_3515 Avenue 228_W Tulare.PDF
+data/annual-reports/Tulare West/Consulting_and_Error_Causing_Forms/2024AR_Meadowlake Dairy_6802 Avenue 120_W Tulare.PDF
+data/annual-reports/Tulare West/Consulting_and_Error_Causing_Forms/2024AR_Parreira Farms #2_11021 Avenue 120_W Tulare.PDF
+data/annual-reports/Tulare West/Consulting_and_Error_Causing_Forms/2024AR_Scalia Inc._21399 Road 76_W Tulare.PDF
+data/annual-reports/Tulare West/Consulting_and_Error_Causing_Forms/2024AR_Scalia Inc._7405 Avenue 216_W Tulare.PDF
+data/annual-reports/Tulare West/Consulting_and_Error_Causing_Forms/2024AR_South Creek Dairy_11450 Avenue 64_W Tulare.PDF
+data/annual-reports/Tulare West/Consulting_and_Error_Causing_Forms/2024AR_Sun Valley Dairy_255 Road 128_W Tulare.PDF
+data/annual-reports/Tulare West/Consulting_and_Error_Causing_Forms/2024AR_VP Farms Dairy_15503 Road 96_W Tulare.PDF
+data/annual-reports/Tulare West/Consulting_and_Error_Causing_Forms/2024AR_Valov Brothers Farms LP_2865 West Prosperity Avenue_W Tulare.PDF
+data/annual-reports/Tulare West/Consulting_and_Error_Causing_Forms/2024Ar_Sunset Dairy_29049 Road 68_W Tulare.PDF
+data/annual-reports/Rancho Cordova/Correct_Forms/1054 Lundy Rd Newman 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Correct_Forms/1912 Franklin Rd Merced 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Correct_Forms/2226 Hull Rd Atwater 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Correct_Forms/227 W El Nido Rd El Nido 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Correct_Forms/238 S Buhach Rd Merced 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Correct_Forms/26290 SOuth Union Road, Manteca 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Correct_Forms/3105 Trindade Rd Atwater 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Correct_Forms/6600 S Hwy 59 Merced 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Correct_Forms/6800 E Ave Ballico 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Correct_Forms/6916 County Rd 30 Orland 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Correct_Forms/7025 W. Central Ave, Turlock 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Correct_Forms/730 W Monte Vista Ave Ceres 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Correct_Forms/7329 County Rd 16 Orland 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Correct_Forms/7413 S Mitchell Rd, Turlock 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Correct_Forms/7509 Oakdale Rd Snelling 2024 dairy AR.pdf
+data/annual-reports/Rancho Cordova/Correct_Forms/7706 Tegner Rd, Hilmar 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Correct_Forms/7801 Carpenter Rd Modesto 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Correct_Forms/8632 W Meandow Dr Winton 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Correct_Forms/8940 E Melton Rd Manteca 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Correct_Forms/9018 W Linwood Ave, Turlock 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Correct_Forms/9375 N Washington Rd, Hilmar 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Correct_Forms/9483 Columbus Ave, Hilmar 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Correct_Forms/9500 W. Linwood Ave, Turlock 2024 GoatDairy AR.pdf
+data/annual-reports/Rancho Cordova/Correct_Forms/9579 Hultberg Rd, Hilmar 2024 Dairy AR.pdf
+data/annual-reports/Rancho Cordova/Correct_Forms/9735 Washington Rd, Hilmar 2024 Dairy AR.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Alta Sierra Dairy_7901 Ave 368_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Arthur Leyendekker Dairy_9001 Ave 360 Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Ben Mendonca & Family Dairy_19517 Rd 124_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Borba Dairy_14836 Rd 200_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Bos Farms LP_20397 Rd 152_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Diamond L Dairy_14229 Ave 228_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Double D Dairy_15276 Ivanhoe Dr_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Double Oak Dairy_3573 E Oakdale Ave_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Fernjo Dairy #1_23135 Rd 148_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Fernjo Dairy #2_12131 Ave 200_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Fernjo Dairy #3_14213 Ave 232_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Fernjo Heifers_14428 Ave 232_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Hettinga Farms Dairy_13400 Ave 120_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Hoppy Cows Dairy_7435 Ave 360_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Lerda-Goni Farms Dairy_18797 Rd 142_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Little H Dairy_15804 Ave 248_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Mancebo Holsteins #1_14891 Ave 232_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Mancebo Holsteins #2 Dairy_23792 Rd 140_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Mario Simoes Family Dairy #1_13185 Ave 136_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Martin Ranch_14861 Ave 144_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Milky Way Dairy_34800 Rd 80_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_North Ridge Dairy_18951 Ave 192_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Nunes & Sons Dairy Inc_26946 Rd 108_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Nunes Brothers Dairy_20439 Rd 124_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Pacheco & Fagundes Dairy_23388 Rd 180_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Ranco Terisita Dairy #3_12671 Ave 200_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Rib-Arrow Dairy_18287 Rd 136_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Ribeiro Dairy_17983 Rd 128_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Rocky Road Dairy_8715 Ave 368_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Sepeda Brothers Dairy_18316 Rd 128_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Sousa Dairy_7709 Ave 376_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Sunrise Dairy_8022 Ave 368_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_T-Bar Dairy_14851 Rd 168_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Tristar Dairy_12212 Ave 176_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Van Beek Brothers Dairy_14808 Ave 152_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Vida Boa #2 Dairy_15011 Ave 240_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_Vida Boa Dairy #1_15125 Ave 240_Tulare.pdf
+data/annual-reports/Tulare East/Correct_Forms/2024AR_White Gold Dairy_18357 Ave 152_Tulare.pdf
+data/annual-reports/Tulare West/Correct_Forms/2024AR_Aukeman Farms Dairy_17297 Road 96_W Tulare.pdf
+data/annual-reports/Tulare West/Correct_Forms/2024AR_Channel Islands Dairy Farms, LLC_13406 Road 24_W Tulare.pdf
+data/annual-reports/Tulare West/Correct_Forms/2024AR_Coronado Dairy Farms, LLC_5850 Avenue 160_W Tulare.pdf
+data/annual-reports/Tulare West/Correct_Forms/2024AR_Curtimade Dairy_18337 Road 24_W Tulare.pdf
+data/annual-reports/Tulare West/Correct_Forms/2024AR_Delta View Farms #3_4590 Avenue 304_W Tulare.pdf
+data/annual-reports/Tulare West/Correct_Forms/2024AR_Dixie Creek South Dairy_24116 Road 28_W Tulare.pdf
+data/annual-reports/Tulare West/Correct_Forms/2024AR_Edwin Brasil Dairy_29134 Road 56_W Tulare.pdf
+data/annual-reports/Tulare West/Correct_Forms/2024AR_El Monte Dairy_10410 Avenue 160_W Tulare.pdf
+data/annual-reports/Tulare West/Correct_Forms/2024AR_Frank C. Lawrence Dairy_28476 Road 52_W Tulare.pdf
+data/annual-reports/Tulare West/Correct_Forms/2024AR_Horizon Jerseys Dairy_8798 Avenue 160_W Tulare.pdf
+data/annual-reports/Tulare West/Correct_Forms/2024AR_JNA Brasil Dairy_6323 Avenue 280_W Tulare.pdf
+data/annual-reports/Tulare West/Correct_Forms/2024AR_Kroes Family Limited Partnership Dairy_15506 Road 80_W Tulare.pdf
+data/annual-reports/Tulare West/Correct_Forms/2024AR_L K Ranches Dairy_29007 Road 56_W Tulare.pdf
+data/annual-reports/Tulare West/Correct_Forms/2024AR_Riverview Dairy_9295 Avenue 88_W Tulare.pdf
+data/annual-reports/Tulare West/Correct_Forms/2024AR_S & S Dairy_5311 Avenue 272_W Tulare.pdf
+data/annual-reports/Tulare West/Correct_Forms/2024AR_Scheenstra Dairy_16800 Road 96_W Tulare.pdf
+data/annual-reports/Tulare West/Correct_Forms/2024AR_Two Star Dairy #1_6305 Avenue 176_W Tulare.pdf
+data/annual-reports/Tulare West/Correct_Forms/Annual Report copy 10.pdf
+data/annual-reports/Tulare West/Correct_Forms/Annual Report copy 2.pdf
+data/annual-reports/Tulare West/Correct_Forms/Annual Report copy 3.pdf
+data/annual-reports/Tulare West/Correct_Forms/Annual Report copy 4.pdf
+data/annual-reports/Tulare West/Correct_Forms/Annual Report copy 5.pdf
+data/annual-reports/Tulare West/Correct_Forms/Annual Report copy 6.pdf
+data/annual-reports/Tulare West/Correct_Forms/Annual Report copy 7.pdf
+data/annual-reports/Tulare West/Correct_Forms/Annual Report copy 8.pdf
+data/annual-reports/Tulare West/Correct_Forms/Annual Report copy 9.pdf
+data/annual-reports/Tulare West/Correct_Forms/Annual Report copy.pdf
+data/annual-reports/Tulare West/Correct_Forms/Annual Report.pdf

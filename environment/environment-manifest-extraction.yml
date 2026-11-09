@@ -1,0 +1,37 @@
+# Conda environment for manifest_preparation.ipynb (manifest OCR, field
+# extraction and validation). Pins are the ones given in the notebook's first
+# cell. The shipped figures record matplotlib 3.11.1.
+#
+#     conda env create -f environment/environment-manifest-extraction.yml
+#     conda activate cafo-manifests
+#
+# System libraries, installed separately:
+#   - Tesseract OCR (brew install tesseract; or apt install tesseract-ocr)
+#   - Poppler, for pdf2image (brew install poppler; or apt install poppler-utils)
+#   - libpostal and its data files, for the postal package
+#     (https://github.com/openvenues/libpostal)
+#
+# API keys, needed only to OCR or geocode files that have no cached output yet,
+# are read from the environment or a .env file (never commit it):
+#   LLMWHISPERER_API_KEY, GOOGLE_GEOCODING_API_KEY
+name: cafo-manifests
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+    - numpy==1.26.4
+    - pandas==2.3.3
+    - opencv-python==4.11.0.86
+    - pdf2image==1.17.0
+    - pillow==10.4.0
+    - PyMuPDF==1.26.7
+    - requests==2.32.5
+    - pytesseract>=0.3.10
+    - postal>=1.1.11
+    - geopy>=2.4.1
+    - python-dotenv>=0.21.0
+    - python-dateutil>=2.8.0
+    - matplotlib>=3.0.0
+    - ipykernel

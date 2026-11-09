@@ -1,0 +1,26 @@
+# Conda environment for analysis/Routing.ipynb.
+#
+#     conda env create -f environment/environment-routing.yml
+#     conda activate manure_trucking_routing
+#
+# Python and osmnx match the published run. Other versions were not recorded.
+#
+# Hardware: the routing graph (data/routing-data/study_area_network_processed_v13.pkl,
+# 1.6 GB on disk; 2.69 million nodes and 8.16 million edges) is held in memory and
+# shared with forked worker processes, so a machine with well over 16 GB of RAM
+# is needed. The published run used a Linux compute cluster. Workers use the
+# fork start method, available on Linux and macOS but not Windows.
+name: manure_trucking_routing
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - osmnx=2.1.0
+  - networkx
+  - geopandas>=1.0
+  - shapely>=2.0
+  - pyproj
+  - pyogrio
+  - numpy
+  - pandas
+  - ipykernel

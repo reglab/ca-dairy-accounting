@@ -1,0 +1,21 @@
+variable,group,n,n_missing,pct_missing,mean,sd,median,median_diff_vs_routed,rank_biserial,p_value
+Total manure (tons),Routed,559,0,0.0,2415.6,2990.8,1335.0,,,
+Total manure (tons),Dropped: No destination address,12,0,0.0,4222.0,4929.8,1825.9,490.9,0.19,0.261062
+Total manure (tons),Dropped: Outside water board,4,0,0.0,5287.5,7140.8,2575.0,1240.0,0.166,0.568212
+Total manure (tons),Dropped: Failed geocode,62,0,0.0,5519.0,4867.3,4158.5,2823.5,0.435,0.0
+Total manure (tons),Dropped: Cross-county APN,11,0,0.0,1231.8,1201.1,700.0,-635.0,-0.238,0.175962
+Total manure (tons),Dropped: Routing Failed,1,0,0.0,2200.0,,2200.0,,,
+Total manure (tons),Dropped: Bad Origin Geocode,14,0,0.0,3867.8,2517.3,3181.0,1846.0,0.478,0.002234
+Total manure (tons),Dropped: Bad Destination Geocode,95,0,0.0,4142.0,4965.2,2236.0,901.0,0.174,0.006762
+Total manure (tons),Dropped: Routing Incorrect,81,0,0.0,2203.4,3601.5,1060.0,-275.0,-0.105,0.127121
+Total manure (tons),Dropped: ALL,280,0,0.0,3770.9,4561.0,1990.0,655.0,0.151,0.000344
+Herd size (animal units),Routed,480,79,14.1,3493.2,2740.3,2587.9,,,
+Herd size (animal units),Dropped: No destination address,7,5,41.7,3775.1,2392.8,2712.5,124.6,0.2,0.364763
+Herd size (animal units),Dropped: Outside water board,3,1,25.0,7827.7,8148.2,4990.6,2402.7,0.335,0.318279
+Herd size (animal units),Dropped: Failed geocode,48,14,22.6,4699.0,2623.8,5125.2,2537.3,0.3,0.000597
+Herd size (animal units),Dropped: Cross-county APN,11,0,0.0,2092.2,1098.7,1999.6,-588.3,-0.25,0.156013
+Herd size (animal units),Dropped: Routing Failed,1,0,0.0,122.4,,122.4,,,
+Herd size (animal units),Dropped: Bad Origin Geocode,14,0,0.0,4793.4,2492.6,4017.3,1429.4,0.33,0.035243
+Herd size (animal units),Dropped: Bad Destination Geocode,81,14,14.7,3196.1,3541.8,1882.6,-705.4,-0.166,0.016964
+Herd size (animal units),Dropped: Routing Incorrect,68,13,16.0,2763.8,2167.7,2184.1,-403.8,-0.147,0.049328
+Herd size (animal units),Dropped: ALL,233,47,16.8,3487.2,3029.0,2587.0,-0.9,-0.025,0.594272

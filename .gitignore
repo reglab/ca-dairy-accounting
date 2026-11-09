@@ -1,0 +1,23 @@
+# Operating system, editor and Python files
+.DS_Store
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.env
+
+# Local tooling and working notes
+/.claude/
+/Claude.md
+/Revised_Manuscript.md
+
+# Files set aside for manual review; not part of the release
+/Extra Files/
+
+# Large inputs hosted on Hugging Face (see README, "Data download")
+/data/annual-reports/
+/data/manifests/
+study_area_network_processed_v13.pkl
+/data/routing-data/*.osm
+# Zipped copies of the data folders, made for the Hugging Face upload, and the download cache
+*.zip
+/data/.cache/
