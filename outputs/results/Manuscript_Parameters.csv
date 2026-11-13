@@ -1,0 +1,216 @@
+name,value,raw,kind,section,description,source
+NReportsAnalyzed,795,795,result,Abstract and Introduction,dairy annual reports in the analysis sample,"cell 3, len(rep_all)"
+UnaccNMillionLb,73.0,73023898.59,result,Abstract and Introduction,"unaccounted-for N over the complete reports, Livingston forms left out (million lb)","cell 3, UNACC_TOTAL_LB"
+TruckMilesMillion,2.28,2282496.4723420897,result,Abstract and Introduction,validated truck-miles including return trips (million),"cell 0, t10 + t20"
+DieselGalRounded,"356,000",355539.8169051044,result,Abstract and Introduction,"diesel burned, nearest thousand gallons","cell 0, _gal_tot"
+NTransportRecords,"1,266",1266,result,Abstract and Introduction,manure plus wastewater transport records,"cell 0, len(manure_df) + len(ww_df)"
+NReportFormats,4,4,result,Methods,annual report form types (Figure S1a),"cell 5, len(_rf)"
+NManifestTemplates,17,17,result,Methods,manifest templates with 2024 forms (Table S1),"cell 6, template counts"
+NManifestLayouts,14,14,result,Methods,distinct page layouts of the manifest templates with 2024 forms (Table S1),"cell 6, templates.csv layout"
+NReportsReceived,858,858,result,Methods,annual reports received,"cell 6, rows of 2024_files_by_template.csv"
+NReportsWithTransport,376,376,result,Methods,reports with at least one transport record,"cell 7, Source PDFs of the processed manifests"
+NManureRecords,839,839,result,Methods,manure transport records,"cell 0, len(manure_df)"
+NWastewaterRecords,427,427,result,Methods,wastewater transport records,"cell 0, len(ww_df)"
+NReportsWithManifests,377,377,result,Methods,reports with at least one analysed manifest,"cell 6, reports_with_manifests"
+NRecordsBothTypes,3,3,result,Methods,transport records counted as both manure and wastewater,"cell 6, records_both"
+NRecordsNoType,3,3,result,Methods,transport records with neither a manure nor a wastewater amount,"cell 6, records_no_type"
+NReportsRobertson,580,580,result,Methods,reports parsed by Robertson et al.,"cell 3, rep_all 'Scraped August 2026' False"
+NReportsScraped,215,215,result,Methods,reports parsed in this study,"cell 3, rep_all 'Scraped August 2026' True"
+NLivingstonReports,18,18,result,Methods,reports on the Livingston Dairy Consulting form,"cell 3, rep_all 'Source Form Type'"
+NLivingstonExcluded,16,16,result,Methods,Livingston reports dropped from the Figure 5 sample (the others have no herd),"cell 3, sample_log"
+NDairiesNitrogenTotals,713,713,result,Methods,complete reports in the unaccounted-for total (Livingston forms left out),"cell 3, len(_kept_n)"
+NDairiesWaterfall,700,700,result,Methods,dairies with all seven nitrogen fields (Figure 3a),"cell 3, WATERFALL_N_DAIRIES"
+NNitrogenCategories,7,7,setting,Methods,nitrogen accounting fields required (Figure 3a),"cell 3, _wf_cols"
+HaulsTenTonManifest,"134,180",134180,result,Methods,10-ton hauls in the processed manure manifests,"cell 6, processed_manure_manifests.csv"
+HaulsTwentyTonManifest,"52,853",52853,result,Methods,20-ton hauls in the processed manure manifests,"cell 6, processed_manure_manifests.csv"
+HaulsTenTonRouting,"134,180",134180.0,result,Methods,10-ton hauls as recomputed by Routing.ipynb (behind the truck-miles),"cell 0, manure_df"
+HaulsTwentyTonRouting,"52,853",52853.0,result,Methods,20-ton hauls as recomputed by Routing.ipynb (behind the truck-miles),"cell 0, manure_df"
+NetworkBufferKm,25,25,literal,Methods,road network buffer around the Water Board (km),literal; Routing.ipynb buffer_km
+RoadBufferM,500,500,setting,Methods,near-road exposure buffer (m),"cell 0, BUFFER_DISTANCE_M"
+NBlockGroups,"4,851",4851,result,Methods,block groups with income statistics,"cell 2, len(corr4)"
+PctDestFarmer,39.9,39.94582435330721,result,Figure 2 and Section 3.1,"manure tonnage share, destination type Farmer","cell 5, by_dest['pct_tons']"
+PctDestCompost,26.2,26.154307914799492,result,Figure 2 and Section 3.1,"manure tonnage share, destination type Composting Facility","cell 5, by_dest['pct_tons']"
+PctDestBroker,23.8,23.7911573621419,result,Figure 2 and Section 3.1,"manure tonnage share, destination type Broker","cell 5, by_dest['pct_tons']"
+PctDestOther,2.5,2.494570840156408,result,Figure 2 and Section 3.1,"manure tonnage share, destination type Other","cell 5, by_dest['pct_tons']"
+PctDestBlank,7.6,7.614139529595,result,Figure 2 and Section 3.1,"manure tonnage share, destination type Blank","cell 5, by_dest['pct_tons']"
+PctAddrStreet,73.2,73.15607428791292,result,Figure 2 and Section 3.1,manure tonnage share to a street address,"cell 5, by_trace['pct_tons']"
+PctAddrIncomplete,26.8,26.843925712087085,result,Figure 2 and Section 3.1,manure tonnage share with no or an incomplete address,"cell 5, _unplaceable / T6_TONS"
+IncompleteAddrTons,"645,911",645911.4,result,Figure 2 and Section 3.1,manure tons with no or an incomplete address,"cell 5, _unplaceable"
+PctWwDestFarmer,78.3,78.25238748610623,result,Figure 2 and Section 3.1,wastewater gallons share to farmers,"cell 5, _wd"
+PctWwDestBlank,21.7,21.685305309474327,result,Figure 2 and Section 3.1,wastewater gallons share with no destination type,"cell 5, _wd"
+PctWwModeUnsure,73.3,73.32755543396102,result,Figure 2 and Section 3.1,"wastewater gallons, transport mode unknown","cell 5, _unsure_pct"
+PctWwModePipeline,22.6,22.58820075769077,result,Figure 2 and Section 3.1,wastewater gallons by pipeline,"cell 5, _pipe_pct"
+PctWwModeTruck,4.1,4.084243808348211,result,Figure 2 and Section 3.1,wastewater gallons by truck,"cell 5, _truck_pct"
+NDairiesComplete,735,735,result,Figure 2 and Section 3.1,"annual reports in the herd, manure and wastewater totals","cell 3, len(_kept_all)"
+HerdTotal,"1,814,936",1814936.0,result,Figure 2 and Section 3.1,total herd size of those reports (head),"cell 3, _kept_all['Total Herd Size'].sum()"
+NDairiesWwStated,718,718,result,Figure 2 and Section 3.1,"of those reports, the ones stating process wastewater generated","cell 3, _kept_all"
+ManureGenMillionTons,31.0,30990553.03,result,Figure 2 and Section 3.1,fresh manure generated (million tons),"cell 3, _kept_all['Total Manure Excreted (tons)'].sum()"
+WwGenBillionGal,23.6,23628188492.82,result,Figure 2 and Section 3.1,process wastewater generated (billion gallons),"cell 3, _kept_all['Total Process Wastewater Generated (gals)'].sum()"
+ManureExportTons,"2,406,173",2406173.4,result,Figure 2 and Section 3.1,manifested manure exports (tons),"cell 5, T6_TONS"
+WwExportMillionGal,915,914821978.15,result,Figure 2 and Section 3.1,manifested wastewater exports (million gallons),"cell 5, WW_TOTAL"
+NReportsStandard,692,692,result,Figure 2 and Section 3.1,reports on the standard Water Board form,"cell 5, _rf"
+PctReportsStandard,87,87.04402515723271,result,Figure 2 and Section 3.1,share of reports on the standard form,"cell 5, _rf"
+NReportsConsultant,103,103,result,Figure 2 and Section 3.1,reports on a consultant form (including the 2 hybrids),"cell 5, _rf"
+NReportsIasLivingston,101,101,result,Figure 2 and Section 3.1,reports wholly on the Innovative Ag Services or Livingston form,"cell 5, _rf"
+PctManifestsActiveOrder,10.4,10.4,result,Figure 2 and Section 3.1,analysed manifests on the R5-2013-0122 form,"cell 6, template counts analysis_pct"
+PoBoxReceiverTons,"163,632",163632.0,result,Figure 2 and Section 3.1,tons to the second-largest receiver (PO BOX 81498 BAKERSFIELD),"cell 5, s6 rank 2"
+PoBoxReceiverRecords,18,18,result,Figure 2 and Section 3.1,records to the second-largest receiver,"cell 5, s6 rank 2"
+PctPoBoxReceiver,6.95,6.95,result,Figure 2 and Section 3.1,second-largest receiver's share of exports with an address,"cell 5, s6 rank 2"
+NitrogenGeneratedTons,"190,000",189842.21144,result,Figure 3 and Section 3.2,"dry manure N generated (tons, nearest thousand; Figure 3a)","cell 3, WATERFALL"
+NitrogenVolatilizedTons,"57,000",56952.663432000016,result,Figure 3 and Section 3.2,"N lost as ammonia (tons, nearest thousand)","cell 3, WATERFALL"
+NitrogenAppliedTons,"52,000",51986.99306,result,Figure 3 and Section 3.2,"N applied to dairy fields, manure plus wastewater (tons, nearest thousand)","cell 3, WATERFALL"
+NitrogenExportedTons,"45,000",44832.037099999994,result,Figure 3 and Section 3.2,"N exported (tons, nearest thousand)","cell 3, WATERFALL"
+NitrogenUnaccountedTons,"36,000",36070.517935,result,Figure 3 and Section 3.2,"N unaccounted-for (tons, nearest thousand)","cell 3, WATERFALL"
+NDairiesOverApplied,116,116,result,Figure 3 and Section 3.2,dairies applying and exporting more N than available,"cell 3, WATERFALL_NEG_N"
+RatioWindow,90,90,setting,Figure 3 and Section 3.2,moving-median window (dairies),"cell 3, RATIO_WINDOW"
+BootDraws,"2,000",2000,setting,Figure 3 and Section 3.2,bootstrap draws for the rho intervals,"cell 3, RATIO_BOOT_DRAWS"
+MedianUnaccPct,39.8,0.39753807830747695,result,Figure 3 and Section 3.2,median dairy's unaccounted-for share of available N,"cell 5, _s9['f_unacc'].median()"
+RhoSnineFracHerd,0.186,0.186228172955164,result,Figure 3 and Section 3.2,"Spearman rho, unaccounted-for N fraction vs animal units (Figure S9d)","cell 5, _s9_stats"
+pSnineFracHerd,\ensuremath{{}\leq 0.001},3.782264024296601e-06,result,Figure 3 and Section 3.2,p for RhoSnineFracHerd,"cell 5, _s9_stats"
+RhoSnineLbHerd,0.662,0.6618740187902945,result,Figure 3 and Section 3.2,"Spearman rho, unaccounted-for N (lb) vs animal units (Figure S9c)","cell 5, _s9_stats"
+pSnineLbHerd,\ensuremath{{}\leq 0.001},6.932023109798038e-78,result,Figure 3 and Section 3.2,p for RhoSnineLbHerd,"cell 5, _s9_stats"
+NDairiesPressure,686,686,result,Figure 3 and Section 3.2,dairies with a ratio and crop removal above zero,"cell 5, len(_rp3)"
+MedianPressure,2.3,2.301615509177885,result,Figure 3 and Section 3.2,median nitrogen pressure,"cell 5, _rp3['pressure'].median()"
+RhoPressureExported,0.395,0.39516265619933777,result,Figure 3 and Section 3.2,"Spearman rho, nitrogen pressure vs exported N fraction (Figure 3d)","cell 5, RHO_FIG3"
+pPressureExported,\ensuremath{{}\leq 0.001},7.750148523142157e-27,result,Figure 3 and Section 3.2,p for RhoPressureExported,"cell 5, RHO_FIG3"
+RhoPressureUnacc,0.431,0.43125880233776476,result,Figure 3 and Section 3.2,"Spearman rho, nitrogen pressure vs unaccounted-for N fraction (Figure 3d)","cell 5, RHO_FIG3"
+pPressureUnacc,\ensuremath{{}\leq 0.001},6.000926363221093e-32,result,Figure 3 and Section 3.2,p for RhoPressureUnacc,"cell 5, RHO_FIG3"
+RhoRatioUnacc,0.128,0.12805367947976792,result,Figure 3 and Section 3.2,"Spearman rho, applied-to-removed ratio vs unaccounted-for N fraction (Figure 3c)","cell 5, RHO_FIG3"
+pRatioUnacc,\ensuremath{{}\leq 0.001},0.0008545192208373364,result,Figure 3 and Section 3.2,p for RhoRatioUnacc,"cell 5, RHO_FIG3"
+NDairiesRatioAboveThr,23,23,result,Figure 3 and Section 3.2,dairies reporting a ratio above 1.4,"cell 5, _rt"
+RatioBandLow,1.2,1.2,setting,Figure 3 and Section 3.2,lower edge of the ratio band,"cell 5, RATIO_BAND"
+RatioBandHigh,1.4,1.4,setting,Figure 3 and Section 3.2,upper edge of the ratio band,"cell 5, RATIO_BAND"
+MedianUnaccFracBand,0.458,0.4582337299715499,result,Figure 3 and Section 3.2,"median unaccounted-for N fraction, dairies in the ratio band","cell 5, _ra"
+MedianUnaccFracRest,0.365,0.3649113356922841,result,Figure 3 and Section 3.2,"median unaccounted-for N fraction, other dairies","cell 5, _rb"
+pRatioBand,\ensuremath{{}=0.005},0.0046325562366687344,result,Figure 3 and Section 3.2,"Mann-Whitney p, band vs rest","cell 5, _rp"
+RankBiserialBand,0.128,0.1283989501312337,result,Figure 3 and Section 3.2,"rank-biserial correlation, band vs rest","cell 5, _rbc"
+NCounterfactualAbove,470,470,result,Figure 3 and Section 3.2,dairies above 1.4 if unaccounted-for N were applied,"cell 5, _wi_ratio"
+NCounterfactualDairies,676,676,result,Figure 3 and Section 3.2,dairies with a reported crop removal (Figure S5),"cell 5, len(_wi)"
+PctCounterfactualAbove,70,0.6952662721893491,result,Figure 3 and Section 3.2,share of those dairies above 1.4,"cell 5, _wi_ratio"
+MedianCounterfactualRatio,1.97,1.9747813578979547,result,Figure 3 and Section 3.2,median counterfactual applied-to-removed ratio,"cell 5, _wi_ratio.median()"
+NRoutedValidated,559,559,result,Section 3.3 and Figure 4,manure records routed and validated,"cell 0, m_final_successfully_routed"
+PctRoutedValidated,66.6,66.626936829559,result,Section 3.3 and Figure 4,share of manure records routed and validated,cell 0
+PctTonsRoutedValidated,56.1,56.11913505485515,result,Section 3.3 and Figure 4,share of manifest tonnage on validated routes,"cell 0, fail"
+PctRoutesExcluded,33.4,33.373063170441,result,Section 3.3 and Figure 4,share of manure records excluded from routing,cell 0
+PctTonsExcluded,43.9,43.88086494514485,result,Section 3.3 and Figure 4,share of manifest tonnage excluded from routing,"cell 0, fail"
+TruckMilesTotal,"2,282,496",2282496.4723420897,result,Section 3.3 and Figure 4,validated truck-miles including return trips,"cell 0, t10 + t20"
+TruckMilesTenTon,"1,657,340",1657339.626077293,result,Section 3.3 and Figure 4,truck-miles by 10-ton trucks,"cell 0, t10"
+TruckMilesTwentyTon,"625,157",625156.846264797,result,Section 3.3 and Figure 4,truck-miles by 20-ton trucks,"cell 0, t20"
+LoadedMilesOneWay,"1,141,248",1141248.2361710449,result,Section 3.3 and Figure 4,validated one-way loaded miles,"cell 0, loaded_mi"
+PMKg,119.5,119547.14705318463,result,Section 3.3 and Figure 4,truck PM2.5 emissions (kg),"cell 0, tot_pm"
+NOxKg,"2,927.3",2927295.1688781115,result,Section 3.3 and Figure 4,truck NOx emissions (kg),"cell 0, tot_nox"
+DieselGal,"355,540",355539.8169051044,result,Section 3.3 and Figure 4,diesel burned (gallons),"cell 0, _gal_tot"
+COtwoTons,"3,623",3622.950734263015,result,Section 3.3 and Figure 4,CO2 emitted (metric tons),"cell 0, _co2_tot"
+TripCutMi,25,25,setting,Section 3.3 and Figure 4,trip-length cut quoted in Section 3.3 (miles),"cell 5, FIG4F_CUTS"
+PctTripsUnderCut,90.0,89.95239859761138,result,Section 3.3 and Figure 4,share of trips shorter than the cut,"cell 5, melted"
+LongestRouteMi,104.0,103.98340218404084,result,Section 3.3 and Figure 4,longest validated one-way route (miles),"cell 5, max_mi"
+MeanRouteMi,10.0,10.035504365819795,result,Section 3.3 and Figure 4,mean one-way length of the validated routes (miles),"cell 5, success_lines['route_mi'].mean()"
+PctTruckMiTopRoutes,10.2,0.10168579649438156,result,Section 3.3 and Figure 4,ten longest routes' share of truck-miles,"cell 0, TOP_ROUTES_TRUCK_MI_SHARE"
+PctTonsTopRoutes,1.8,0.01799273441920019,result,Section 3.3 and Figure 4,ten longest routes' share of routed tons,"cell 0, TOP_ROUTES_TON_SHARE"
+pDroppedTons,\ensuremath{{}\leq 0.001},0.0003435182843669012,result,Section 3.3 and Figure 4,"Mann-Whitney p, Dropped: ALL vs routed, Total manure (tons)","cell 1, balance_cont"
+rDroppedTons,0.15,0.151424738052645,result,Section 3.3 and Figure 4,"rank-biserial r, Dropped: ALL vs routed, Total manure (tons)","cell 1, balance_cont"
+pFailedGeocodeTons,\ensuremath{{}\leq 0.001},1.804547007025806e-08,result,Section 3.3 and Figure 4,"Mann-Whitney p, Dropped: Failed geocode vs routed, Total manure (tons)","cell 1, balance_cont"
+rFailedGeocodeTons,0.44,0.43545501760055405,result,Section 3.3 and Figure 4,"rank-biserial r, Dropped: Failed geocode vs routed, Total manure (tons)","cell 1, balance_cont"
+pBadDestTons,\ensuremath{{}=0.007},0.006761736552828583,result,Section 3.3 and Figure 4,"Mann-Whitney p, Dropped: Bad Destination Geocode vs routed, Total manure (tons)","cell 1, balance_cont"
+rBadDestTons,0.17,0.17367479521702278,result,Section 3.3 and Figure 4,"rank-biserial r, Dropped: Bad Destination Geocode vs routed, Total manure (tons)","cell 1, balance_cont"
+pFailedGeocodeHerd,\ensuremath{{}\leq 0.001},0.0005971704008814221,result,Section 3.3 and Figure 4,"Mann-Whitney p, Dropped: Failed geocode vs routed, Herd size (animal units)","cell 1, balance_cont"
+rFailedGeocodeHerd,0.30,0.3003472222222223,result,Section 3.3 and Figure 4,"rank-biserial r, Dropped: Failed geocode vs routed, Herd size (animal units)","cell 1, balance_cont"
+pBadDestHerd,\ensuremath{{}=0.017},0.016963963717240075,result,Section 3.3 and Figure 4,"Mann-Whitney p, Dropped: Bad Destination Geocode vs routed, Herd size (animal units)","cell 1, balance_cont"
+rBadDestHerd,\ensuremath{-}0.17,-0.16574074074074074,result,Section 3.3 and Figure 4,"rank-biserial r, Dropped: Bad Destination Geocode vs routed, Herd size (animal units)","cell 1, balance_cont"
+pDroppedHerd,\ensuremath{{}=0.594},0.5942723026861663,result,Section 3.3 and Figure 4,"Mann-Whitney p, Dropped: ALL vs routed, Herd size (animal units)","cell 1, balance_cont"
+rDroppedHerd,\ensuremath{-}0.02,-0.024579756795422014,result,Section 3.3 and Figure 4,"rank-biserial r, Dropped: ALL vs routed, Herd size (animal units)","cell 1, balance_cont"
+RhoIncomePerRes,\ensuremath{-}0.187,-0.1870497453425103,result,Section 3.3 and Figure 4,"Spearman rho, truck-miles per resident vs median household income","cell 2, corr_tab"
+pIncomePerRes,\ensuremath{{}\leq 0.001},1.9261611787720325e-39,result,Section 3.3 and Figure 4,p for RhoIncomePerRes,"cell 2, corr_tab"
+RhoIncomePerArea,\ensuremath{-}0.199,-0.1991854385588293,result,Section 3.3 and Figure 4,"Spearman rho, truck-miles per mi2 vs median household income","cell 2, corr_tab"
+pIncomePerArea,\ensuremath{{}\leq 0.001},1.351700841548896e-44,result,Section 3.3 and Figure 4,p for RhoIncomePerArea,"cell 2, corr_tab"
+TruckMiPerPersonQOne,0.38,0.38429768336202685,result,Section 3.3 and Figure 4,"truck-miles per person, lowest income quintile","cell 2, q_tab"
+TruckMiPerPersonQFive,0.11,0.11225208203174539,result,Section 3.3 and Figure 4,"truck-miles per person, highest income quintile","cell 2, q_tab"
+PlaceTotalFirstName,Tulare,Tulare city,result,Section 3.3 and Figure 4,place ranked 1 by total truck-miles (Table S8),Table S8
+PlaceTotalFirstMi,"49,299",49299.0,result,Section 3.3 and Figure 4,truck-miles of that place,Table S8
+PlaceTotalSecondName,Visalia,Visalia city,result,Section 3.3 and Figure 4,place ranked 2 by total truck-miles (Table S8),Table S8
+PlaceTotalSecondMi,"33,797",33797.0,result,Section 3.3 and Figure 4,truck-miles of that place,Table S8
+PlaceTotalThirdName,Shafter,Shafter city,result,Section 3.3 and Figure 4,place ranked 3 by total truck-miles (Table S8),Table S8
+PlaceTotalThirdMi,"26,521",26521.0,result,Section 3.3 and Figure 4,truck-miles of that place,Table S8
+PlaceTopN,20,20,setting,Section 3.3 and Figure 4,communities listed in Tables S8-S10,"cell 0, PLACE_TOP_N"
+NTopPerResCDP,20,20,result,Section 3.3 and Figure 4,CDPs among the top communities per resident,Table S9
+PlacePerResFirstName,Lakeside,Lakeside CDP,result,Section 3.3 and Figure 4,place ranked 1 per resident (Table S9),Table S9
+PlacePerResFirstMi,24.23,24.23,result,Section 3.3 and Figure 4,truck-miles per resident of that place,Table S9
+NTopPerAreaCDP,17,17,result,Section 3.3 and Figure 4,CDPs among the top communities per mi2,Table S10
+PlacePerAreaFirstName,Tipton,Tipton CDP,result,Section 3.3 and Figure 4,place ranked 1 per mi2 (Table S10),Table S10
+PlacePerAreaFirstMi,"10,908",10908.0,result,Section 3.3 and Figure 4,truck-miles per mi2 of that place,Table S10
+TopResidentsPct,5,5,setting,Section 3.3 and Figure 4,most-exposed share of residents (percent),"cell 2, quantiles printed"
+PctVmtTopResidents,48.7,0.486943956141123,result,Section 3.3 and Figure 4,in-place truck-miles carried by the most-exposed residents,"cell 2, _cum_vmt"
+NDairiesMapped,686,686,result,Section 3.3 and Figure 4,dairies drawn in Figure 4a,"cell 5, len(_sized)"
+RhoPlacePopExposure,\ensuremath{-}0.504,-0.5042854827103649,result,Section 3.3 and Figure 4,"Spearman rho, place population vs truck-miles per resident (Figure 4f)","cell 5, _rho_5d"
+pPlacePopExposure,\ensuremath{{}\leq 0.001},1.3520813493191136e-10,result,Section 3.3 and Figure 4,p for RhoPlacePopExposure,"cell 5, _p_5d"
+NPlacesExposed,143,143,result,Section 3.3 and Figure 4,places with truck-miles (Figure 4f),"cell 5, len(_pl_pts)"
+PctLandApplication,20.2,20.153897441657247,result,Section 3.4 and Figure 5,land application share of available N (Figure 5b),"cell 3, nbasis"
+PctLiquid,26.0,25.981849751233458,result,Section 3.4 and Figure 5,liquid/slurry share of available N,"cell 3, nbasis"
+PctDryStorage,8.5,8.547654872591956,result,Section 3.4 and Figure 5,dry storage share of available N,"cell 3, nbasis"
+ExportGapTons,"19,746",19746.213613707652,result,Section 3.4 and Figure 5,reported export N not documented in manifests (tons),"cell 3, _exp_gap_lb"
+PctExportsManifestedLow,31,0.3105771988731727,result,Section 3.4 and Figure 5,"manifested share of reported export N, low N contents","cell 3, _exp_cov_lmh"
+PctExportsManifestedHigh,92,0.9190499998070915,result,Section 3.4 and Figure 5,"manifested share of reported export N, high N contents","cell 3, _exp_cov_lmh"
+NDairiesFigFive,721,721,result,Section 3.4 and Figure 5,dairies in the Figure 5 sample,"cell 3, N_DAIRIES"
+NitrogenAvailableMillionLb,273,272513208.219,result,Section 3.4 and Figure 5,available N in the Figure 5 sample (million lb),"cell 3, TOTAL_N"
+PctUnaccountedFigFive,27.5,27.454695468879507,result,Section 3.4 and Figure 5,unaccounted-for share in Figure 5b,"cell 3, remainder_shown"
+NReportsDropped,63,63,result,SI Methods 0.1.1,reports received but not analysed,cells 3 and 6
+NDairiesGeocoded,767,767,result,SI Methods 0.1.1,dairies with a geocoded address,"cell 5, _geo['lat']"
+NManifestsAutoFound,"1,169",1169,result,SI Methods 0.1.1,manifests found by the keyword search,cell 6
+NFalsePositives,2,2,literal,SI Methods 0.1.1,keyword-search false positives (from the manual screening),literal; no file records it
+PctFalsePositives,0.2,0.1710863986313088,result,SI Methods 0.1.1,share of the manifests found,cell 7
+NPartialManifests,1,1,literal,SI Methods 0.1.1,partial manifests without a signature or record (from the manual screening),literal; no file records it
+PctPartialManifests,0.1,0.0855431993156544,result,SI Methods 0.1.1,share of the manifests found,cell 7
+NMissedManifests,58,58,literal,SI Methods 0.1.1,manifests missed by the keyword search (from the manual screening),literal; no file records it
+PctMissedManifests,5.0,4.961505560307955,result,SI Methods 0.1.1,share of the manifests found,cell 7
+NManifestsScreened,"1,225",1225,result,SI Methods 0.1.1,"manifests after the manual screening, duplicates included","cell 6, docs_screened"
+NDuplicates,27,27,result,SI Methods 0.1.1,duplicate manifests removed,cell 6
+NDuplicatesExact,14,14,result,SI Methods 0.1.1,exact-copy duplicates,cell 6
+NDuplicatesCag,13,13,result,SI Methods 0.1.1,CAG018001 duplicates,cell 6
+NManifestsAnalyzed,"1,198",1198,result,SI Methods 0.1.1,manifest documents analysed,cell 6
+PageCountMin,1,1,result,SI Methods 0.1.1,fewest pages of a manifest template,"cell 6, table_s1"
+PageCountMax,3,3,result,SI Methods 0.1.1,most pages of a manifest template,"cell 6, table_s1"
+NManifestsManual,56,56,result,SI Methods 0.1.1,manifests whose pages were specified by hand,cell 6
+NReportsManualManifests,20,20,result,SI Methods 0.1.1,reports holding those manifests,cell 6
+NMissedManifestsOther,2,2,literal,SI Methods 0.1.1,missed manifests corrected during validation (upside-down or out-of-order pages),literal NMissedManifests less cell 6 docs_manual
+NRecordsCompared,"1,105",1105,result,SI Methods 0.1.1,records compared in Figure S10,cell 6
+NRecordsAnyError,635,635,result,SI Methods 0.1.1,records with at least one correction,cell 6
+PctRecordsAnyError,57.5,0.5746606334841629,result,SI Methods 0.1.1,share of compared records with a correction,cell 6
+NRecordsImpactError,500,500,result,SI Methods 0.1.1,records with a correction to a result-relevant field,cell 6
+PctRecordsImpactError,45.2,0.45248868778280543,result,SI Methods 0.1.1,share of compared records with such a correction,cell 6
+AccDestAddress,73.0,72.95373665480427,result,SI Methods 0.1.1,"extraction accuracy, Destination Address","cell 6, s10_stats"
+AccDestContact,58.3,58.29059829059828,result,SI Methods 0.1.1,"extraction accuracy, Destination Contact Address","cell 6, s10_stats"
+AccDestParcel,40.9,40.88050314465409,result,SI Methods 0.1.1,"extraction accuracy, Destination Assessor Parcel Number","cell 6, s10_stats"
+HaulBinLow,5,5.0,setting,SI Methods 0.1.1,lower edge of the 10-ton bin (tons per haul),"cell 6, HAUL_BIN_LOW"
+HaulBinMid,15,15.0,setting,SI Methods 0.1.1,edge between the 10- and 20-ton bins (tons per haul),"cell 6, HAUL_BIN_MID"
+SingleHaulBelowTons,10,10.0,setting,SI Methods 0.1.1,a manifest under this many tons is one 10-ton haul,"cell 6, SINGLE_HAUL_BELOW_TONS"
+PctTenTonBin,56,0.5551518419533626,result,SI Methods 0.1.1,10-ton bin's share of tonnage on manifests reporting a haul size,cell 6
+NRecordsHaulDate,828,828,result,SI Methods 0.1.1,manure records with a haul date,"cell 5, _dated"
+NRecordsLastDateOnly,567,567,result,SI Methods 0.1.1,manure records with only a last haul date,"cell 5, _last_only"
+AuMilkCow,1.40,1.4,setting,SI Methods 0.1.1,"animal units per head, Milk Cows","cell 0, AU_FACTORS"
+AuDryCow,1.12,1.12,setting,SI Methods 0.1.1,"animal units per head, Dry Cows","cell 0, AU_FACTORS"
+AuLargeHeifer,1.02,1.02,setting,SI Methods 0.1.1,"animal units per head, Bred Heifers","cell 0, AU_FACTORS"
+AuSmallHeifer,0.49,0.49,setting,SI Methods 0.1.1,"animal units per head, Heifers","cell 0, AU_FACTORS"
+AuCalf,0.29,0.29,setting,SI Methods 0.1.1,"animal units per head, Calves (0-3 mo.)","cell 0, AU_FACTORS"
+WastewaterSourceTons,"37,000",37033.73991,result,SI Methods 0.1.2 and 0.1.3,"added unaccounted-for N if wastewater N were a separate source (tons, nearest thousand)","cell 3, WATERFALL_WW"
+OsmnxVersion,2.1.0,2.1.0,literal,SI Methods 0.1.2 and 0.1.3,OSMnx version used by Routing.ipynb,literal; environment/environment-routing.yml
+NetworkxVersion,3.6.1,3.6.1,literal,SI Methods 0.1.2 and 0.1.3,NetworkX version,literal; environment/environment.yml
+SpeedHighwayKph,100,100,literal,SI Methods 0.1.2 and 0.1.3,default highway speed (kph),literal; Routing.ipynb speed defaults
+SpeedResidentialKph,30,30,literal,SI Methods 0.1.2 and 0.1.3,default residential speed (kph),literal; Routing.ipynb speed defaults
+SpeedFallbackKph,40,40,literal,SI Methods 0.1.2 and 0.1.3,speed for segments with no speed or category (kph),literal; Routing.ipynb speed defaults
+EmfacVersion,2.1.1,"EMFAC2025 v2.1.1, Emission Rates",result,SI Methods 0.1.2 and 0.1.3,EMFAC model version,"cell 0, EMFAC_META"
+EmfacTenTonNOx,1.21,1.211829941515,result,SI Methods 0.1.2 and 0.1.3,"EMFAC NOx rate, 10-ton class (g/mile)","cell 0, ef_c7_g_per_mi"
+EmfacTwentyTonNOx,1.47,1.4698413561789,result,SI Methods 0.1.2 and 0.1.3,"EMFAC NOx rate, 20-ton class (g/mile)","cell 0, ef_c8_g_per_mi"
+EmfacTenTonCOtwo,"1,621.27",1621.2724627074,result,SI Methods 0.1.2 and 0.1.3,"EMFAC CO2 rate, 10-ton class (g/mile)","cell 0, ef_c7_g_per_mi"
+EmfacTwentyTonCOtwo,"1,497.15",1497.1469044005,result,SI Methods 0.1.2 and 0.1.3,"EMFAC CO2 rate, 20-ton class (g/mile)","cell 0, ef_c8_g_per_mi"
+EmfacTenTonPMtwofive,0.0516,0.0515723048766965,result,SI Methods 0.1.2 and 0.1.3,"EMFAC PM2.5 rate, 10-ton class (g/mile)","cell 0, ef_c7_g_per_mi"
+EmfacTwentyTonPMtwofive,0.0545,0.0545052378078948,result,SI Methods 0.1.2 and 0.1.3,"EMFAC PM2.5 rate, 20-ton class (g/mile)","cell 0, ef_c8_g_per_mi"
+MpgTenTon,6.29,6.28518662617848,result,SI Methods 0.1.2 and 0.1.3,"miles per gallon, 10-ton class","cell 0, _fuel"
+MpgTwentyTon,6.81,6.806279310366249,result,SI Methods 0.1.2 and 0.1.3,"miles per gallon, 20-ton class","cell 0, _fuel"
+MinHerd,1,1,setting,SI Methods 0.1.4 and SI figure captions,herd size at or below which a report is dropped,"cell 3, MIN_HERD"
+NNonDairy,1,1,result,SI Methods 0.1.4 and SI figure captions,non-dairy operations dropped,"cell 3, sample_log"
+NManureRecordsLinked,784,784,result,SI Methods 0.1.4 and SI figure captions,manure records linked to a sample dairy,"cell 3, man_n['_rep']"
+NWwRecordsLinked,421,421,result,SI Methods 0.1.4 and SI figure captions,wastewater records linked to a sample dairy,"cell 3, ww_n['_rep']"
+SolidsDefaultPct,48.7,0.48719068234988955,result,SI Methods 0.1.4 and SI figure captions,"tonnage-weighted mean solids, used where none is reported","cell 3, SOLIDS_DEFAULT"
+NDairiesSnine,675,675,result,SI Methods 0.1.4 and SI figure captions,dairies in Figure S9 (the Figure 3b sample),"cell 5, len(_s9)"
+MedianUnaccLb,"90,308",90307.85000000003,result,SI Methods 0.1.4 and SI figure captions,median unaccounted-for N per dairy (lb),"cell 5, _s9['unacc'].median()"
+NDairiesSnineAu,608,608,result,SI Methods 0.1.4 and SI figure captions,Figure S9 dairies with all six herd classes,"cell 5, _s9['au']"

@@ -144,6 +144,12 @@ def add_crop_column(out, review):
             tally["passes the page check"] += 1
         else:
             tally[f"blank until reviewed ({x['Status']})"] += 1
+    # A correction entered in review for a report outside crop_removal_extracted.csv.
+    for pdf, rv in review.items():
+        if pdf not in vals and CROP_KEY in rv.get("fields", {}):
+            v = pd.to_numeric(rv["fields"][CROP_KEY], errors="coerce")
+            vals[pdf] = v
+            tally["corrected in review" if pd.notna(v) else "cleared in review"] += 1
     out[CROP_KEY] = pd.to_numeric(out["Source PDF"].map(vals), errors="coerce")
     return out, tally
 
@@ -242,7 +248,8 @@ def main():
                 changed += redone
                 derived_fixed.append((pdf, redone))
 
-        form = s.get("_form")
+        # The report form the reviewer confirmed overrides the detector's.
+        form = rv.get("form_type") or s.get("_form")
         notes = [] if pd.isna(s.get("_notes")) else [str(s["_notes"])]
         grade = s.get("_grade")
         prefix = f"QA {grade}" + (f"; review {rv['verdict']}" if rv.get("verdict") else "")

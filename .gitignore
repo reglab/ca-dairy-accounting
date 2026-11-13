@@ -9,6 +9,12 @@ __pycache__/
 /.claude/
 /Claude.md
 /Revised_Manuscript.md
+/Bick_et_al_2026_with_parameters.md
+/NOTEBOOK_REVIEW.md
+
+# Manuscript draft and an editor backup file
+/Bick_et_al_2026_preprint.pdf
+/outputs/results/figures/.$Figure_S6_Manifest_Flowchart.drawio.bkp
 
 # Files set aside for manual review; not part of the release
 /Extra Files/

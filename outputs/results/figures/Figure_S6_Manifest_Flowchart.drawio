@@ -1,10 +1,10 @@
 <mxfile host="Electron">
   <diagram name="Page-1" id="pm9haHwO2zZgoAFS6Pjf">
-    <mxGraphModel dx="962" dy="620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1026" dy="804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="bTyuYn84ElTEO6KXO6yn-3" parent="1" style="whiteSpace=wrap;html=1;fillColor=#000000;fontColor=#FFFFFF;" value="&lt;b&gt;Manure + Wastewater Manifests&lt;/b&gt;&lt;div&gt;(1,228 manifests)&lt;/div&gt;" vertex="1">
+        <mxCell id="bTyuYn84ElTEO6KXO6yn-3" parent="1" style="whiteSpace=wrap;html=1;fillColor=#000000;fontColor=#FFFFFF;" value="&lt;b&gt;Manure + Wastewater Manifests&lt;/b&gt;&lt;div&gt;(1,226 manifests)&lt;/div&gt;" vertex="1">
           <mxGeometry height="40" width="190" x="250" y="70" as="geometry" />
         </mxCell>
         <mxCell id="bTyuYn84ElTEO6KXO6yn-4" parent="1" style="whiteSpace=wrap;html=1;fillColor=#CCCCCC;" value="&lt;b&gt;Manure + Wastewater Records&lt;/b&gt;&lt;div&gt;(1,293 records)&lt;/div&gt;" vertex="1">

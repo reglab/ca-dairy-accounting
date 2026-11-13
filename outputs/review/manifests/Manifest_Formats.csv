@@ -1,7 +1,7 @@
 Template “name”,Template ID,Attachment Letter,General Order Referenced,Page Count,Number of manifests 2024,Percent of 2024 manifests,File example,Notes,URL of template
 R5-2007-0035 Software,R5-2007-0035 Software,D,R5-2007-0035,2,402,31.20%,13701 S Hwy 59 El Nido 2024 Dairy AR,"The software is ""currently the required format for Annual Report submittals unless an alternative form has been approved by the Executive Officer""
 Probably a software error that this ""official"" version still says 2007 rather than R5-2013-0122",https://www.waterboards.ca.gov/rwqcb5/water_issues/confined_animal_facilities/general_order_guidance/dairy/reporting_tools/
-R5-2007-0035 Official,R5-2007-0035 General Order,D,R5-2007-0035,2,611,47.40%,15355 S Van Allen Rd Escalon 2024 Dairy AR,,https://www.waterboards.ca.gov/rwqcb5/board_decisions/adopted_orders/general_orders/r5-2007-0035.pdf#page=114
+R5-2007-0035 Official,R5-2007-0035 General Order,D,R5-2007-0035,2,611,47.40%,20000 Cedar Ave Tracy 2024 Dairy AR (manifests 1–2),,https://www.waterboards.ca.gov/rwqcb5/board_decisions/adopted_orders/general_orders/r5-2007-0035.pdf#page=114
 R5-2007-0035 Alternate 1,R5-2007-0035 Variant 1,D,R5-2007-0035,2,,0.00%,13775 Murphy Rd Escalon 2024 Dairy AR,,
 R5-2007-0035 Alternate 2,R5-2007-0035 Variant 2,D,R5-2007-0035,2,,0.00%,348 E Monte Vista Rd Ceres 2024 Dairy AR,,
 R5-2007-0035 Alternate 3,R5-2007-0035 Variant 3,N/A,R5-2007-0035,2,,0.00%,17399 E Avena Rd Escalon 2024 Dairy AR,,
@@ -11,10 +11,10 @@ R5-2010-XXXX Attachment G,R5-2010-XXXX Attachment G,G,R5-2010-XXXX,2,5,0.40%,202
 R5-2010-XXXX Attachment F,R5-2010-XXXX Attachment F,F,R5-2010-XXXX,2,1,0.10%,2024AR_K A Vanderham Dairy_12565 Ave 152_Tulare,"""F"" might just be a typo of G?",
 R5-2013-0122 Official,R5-2013-0122 General Order,D,R5-2013-0122,2,123,9.50%,13436 N Thornton Rd Lodi 2024 Dairy AR,"This order ""rescinds and replaces General Order R5-2007-0035""",https://www.waterboards.ca.gov/centralvalley/board_decisions/adopted_orders/general_orders/r5-2013-0122.pdf#page=158
 R5-2017-0058 Official,R5-2017-0058 General Order,D,R5-2017-0058,2,0,0.00%,,"R5-2017-0058 builds on R5-2007-0035 for ""CONFINED BOVINE FEEDING OPERATIONS""",https://www.waterboards.ca.gov/centralvalley/board_decisions/adopted_orders/general_orders/r5-2017-0058.pdf#page=76
-R5-2017-0058 Alternate 1,R5-2017-0058 Variant 1,D,R5-2017-0058,2,8,0.60%,2024AR_Contente & Co Ranch_5730 20th Ave_Kings,,
+R5-2017-0058 Alternate 1,R5-2017-0058 Variant 1,D,R5-2017-0058,3,8,0.60%,2024AR_Contente & Co Ranch_5730 20th Ave_Kings,,
 R5-2017-0000,R5-2017-0000,,R5-2017-0000,2,1,0.10%,2024AR_Cream Top Dairy_13075 Ave 200_Tulare,,
 Provost Pritchard,Provost Pritchard,N/A,N/A,2,1,0.10%,2024AR_Diamond D LLC Dairy_9423 Idaho Ave_Kings,,
-UCANR,UCANR,N/A,N/A,1,1,0.10%,20000 Cedar Ave Tracy 2024 Dairy AR,,https://cdqap.org/wp-content/uploads/2021/06/06-02-Manure-Manifest-for-North-Coast-Dairies.pdf
-Unknown 1,Unknown Variant 1,N/A,N/A,2,1,0.10%,2024AR_Moonstone Dairy_1305 Iona Avenue_Kings,,
+UCANR,UCANR,N/A,N/A,1,1,0.10%,20000 Cedar Ave Tracy 2024 Dairy AR (manifest 3),,https://cdqap.org/wp-content/uploads/2021/06/06-02-Manure-Manifest-for-North-Coast-Dairies.pdf
+Unknown 1,Unknown Variant 1,N/A,N/A,1,1,0.10%,2024AR_Moonstone Dairy_1305 Iona Avenue_Kings,,
 CAG018001,CAG018001,4,CAG018001,1,15,1.20%,2024AR_John Jongsma Dairy_15434 Ave 192_Tulare,,
-Innovative Ag,Innovative Ag,N/A,,3,1,0.10%,2024AR_South Creek Dairy_11450 Avenue 64_W Tulare,,
+Innovative Ag,Innovative Ag,N/A,,2,1,0.10%,2024AR_South Creek Dairy_11450 Avenue 64_W Tulare,,

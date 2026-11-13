@@ -13,7 +13,7 @@ cd analysis
 jupyter lab Analysis.ipynb                        # then Restart & Run All, runs in ~one minute
 
 
-It writes every generated figure in `outputs/results/figures/` (PNG and EPS) and every table in `outputs/results/tables/`, from the review outputs in `outputs/review/` and the routing files in `outputs/results/routing/`. To regenerate those inputs as well, from the annual-report and manifest PDFs through the routing, follow the detailed directions in [Reproducing the results, step by step](#reproducing-the-results-step-by-step).
+It writes every generated figure in `outputs/results/figures/` (PNG and EPS), every table in `outputs/results/tables/` (including the SI tables in LaTeX, `SI_Tables.md`), and the manuscript's numbers as LaTeX macros (`outputs/results/Manuscript_Parameters.tex`), from the review outputs in `outputs/review/` and the routing files in `outputs/results/routing/`. To regenerate those inputs as well, from the annual-report and manifest PDFs through the routing, follow the detailed directions in [Reproducing the results, step by step](#reproducing-the-results-step-by-step).
 
 ## Contents
 
@@ -45,7 +45,8 @@ The two review stages (annual reports and manifests) mix code with human review.
 ```
 ca-dairy-accounting/
 ├── analysis/
-│   ├── Analysis.ipynb          Final analysis: Figures 2–5, S1, S4–S9 and Tables S5–S11
+│   ├── Analysis.ipynb          Final analysis: Figures 2–5, S1, S4–S10, Tables S5–S11, the SI tables in LaTeX
+│   │                           and the manuscript parameters (Manuscript_Parameters.tex)
 │   └── Routing.ipynb           Routes each manure manifest over the OpenStreetMap road network
 ├── review/
 │   ├── annual-reports/         Annual-report extraction and review (scraper/, reviewer HTML + crops/, orchestrator notebook,
@@ -143,7 +144,7 @@ The published files are already in place. Do not use Run All: the scrape cells r
 - `outputs/review/manifests/2024_files_by_template.csv`: manifest count and pages for each annual-report PDF, which the notebook reads and rewrites;
 - `outputs/results/figures/Figure_S10_Manifest_Extraction_Accuracy.png` and `outputs/review/manifests/Haul_Size_Breakdown.png`.
 
-Rerunning it needs the PDFs and the OCR text folders in `data/manifests/R5/` from Hugging Face (see Data download), the `cafo-manifests` environment and the system libraries in `environment/environment-manifest-extraction.yml`. With the OCR text and the geocode cache, no API key is needed unless new files are added. The notebook's saved outputs are from the collaborator's run.
+Rerunning it needs the PDFs and the OCR text folders in `data/manifests/R5/` from Hugging Face (see Data download), the `cafo-manifests` environment and the system libraries in `environment/environment-manifest-extraction.yml`. With the OCR text and the geocode cache, no API key is needed unless new files are added. On 12 November 2026 the two haul columns of `processed_manure_manifests.csv` were rebuilt with the notebook's own functions from cells 4, 9 and 11 (`backfill_quantities`, `prepare_manifests` and `add_haul_estimates` with the 20-ton bin open-ended), applied to the validated table. The origin-address backfill and geocoding steps, which need libpostal and do not touch the haul inputs, were skipped. Every other column is unchanged, and the counts equal those `Routing.ipynb` computes.
 
 ### 3. Analysis inputs
 
@@ -165,7 +166,7 @@ cd analysis
 jupyter lab Analysis.ipynb     # JupyterLab: see Setup. Then Restart & Run All
 ```
 
-`analysis/Analysis.ipynb` takes about 80 seconds with the exposure caches. It writes every file in `outputs/results/figures/` except Figures 1, S2, S3, S6 and S10 (each figure as a PNG and an EPS), every file in `outputs/results/tables/`, and `outputs/review/manifests/Unmatched_Destination_Review_Sample.csv`. It stops with an error if any input is missing, rather than skipping a figure.
+`analysis/Analysis.ipynb` takes about 80 seconds with the exposure caches. It writes every file in `outputs/results/figures/` except Figures 1, S2, S3 and S6 (each figure as a PNG and an EPS), every file in `outputs/results/tables/`, `outputs/results/Manuscript_Parameters.tex` and `.csv`, and `outputs/review/manifests/Unmatched_Destination_Review_Sample.csv`. It stops with an error if any input is missing, rather than skipping a figure.
 
 The two files in `outputs/results/routing/pair_cache/` cache the most expensive step, the intersection of the 500 m road buffers with block groups and Census places. They are used only while they are newer than `network_with_hauls_v13.gpkg`; otherwise they are rebuilt (several minutes). Because the folder name sorts after the network file, a git checkout writes them later and keeps them valid. All outputs are identical between runs in the pinned environment.
 
@@ -189,7 +190,7 @@ Every figure that `Analysis.ipynb` produces is also saved as an `.eps` file with
 | `Figure_S7_Routing_Failure_Modes.png` | Figure S7 | Analysis.ipynb, cell 4 |
 | `Figure_S8_Routing_Zooms.png` | Figure S8 | Analysis.ipynb, cell 0 |
 | `Figure_S9_Unaccounted_Nitrogen.png` | Figure S9 | Analysis.ipynb, cell 5 |
-| `Figure_S10_Manifest_Extraction_Accuracy.png` | Figure S10 | manifest_preparation.ipynb, cell 21 |
+| `Figure_S10_Manifest_Extraction_Accuracy.png` | Figure S10 | Analysis.ipynb, cell 6, from the extraction outputs in `outputs/review/manifests/` (manifest_preparation.ipynb, cell 21, draws the same figure) |
 
 | File (outputs/results/tables/) | Manuscript | Produced by |
 |---|---|---|
@@ -202,8 +203,12 @@ Every figure that `Analysis.ipynb` produces is also saved as an `.eps` file with
 | `Table_S11_Place_Exposure_Summary.csv` | values quoted in the text | Analysis.ipynb, cell 2 |
 | `BlockGroup_Exposure.csv` | values quoted in the text | Analysis.ipynb, cell 2 |
 | `Exposure_by_Income_Quintile.csv` | Figure 4e and values in the text | Analysis.ipynb, cell 2 |
+| `SI_Tables.md` | Tables S1–S10 in LaTeX, with captions | Analysis.ipynb, cell 7 |
+| `SI_Tables_S2_S4.tex` | Tables S2–S4 in LaTeX | Analysis.ipynb, cell 7 |
 
-Tables S1–S4 are written in the manuscript. Table S1's percentages are `forms_submitted_pct` in `outputs/review/manifests/2024_manifest_template_counts.csv`, and its attachment, order, page-count and file-example columns come from `outputs/review/manifests/Manifest_Formats.csv`; Tables S2–S4 describe the extraction notebook's fields and rules (`review/manifests/helpers/parameters.csv` and the notebook itself). Several numbers in the text are printed by `Analysis.ipynb` rather than saved to a file (for example the emissions and fuel totals, and traceability by destination type).
+`SI_Tables.md` holds every SI table as a `longtable` block (`\usepackage{array,longtable}`). Table S1's percentages are `forms_submitted_pct` in `outputs/review/manifests/2024_manifest_template_counts.csv`, and its attachment, order, page-count and file-example columns come from `outputs/review/manifests/Manifest_Formats.csv`. Tables S2–S4 describe the extraction notebook's fields and rules, so their text is set in cell 7 (`SI_TABLES_S2_S4`), which also writes it on its own to `SI_Tables_S2_S4.tex`. Tables S5–S10 are formatted from the same results as the CSV files above.
+
+`outputs/results/Manuscript_Parameters.tex` (cell 7) defines one LaTeX macro for each number the manuscript quotes from these results, and for each analysis setting it quotes (for example `\UnaccNMillionLb` for the unaccounted-for nitrogen in the abstract, or `\pDroppedTons` for a p-value with its relation). Add `\input{Manuscript_Parameters}` to the manuscript preamble; the `SI_Tables.md` captions use the same macros. `Manuscript_Parameters.csv` lists each macro with its value, unrounded value and the cell and variable it comes from. A few counts that no file records (the manual-screening counts in SI Methods 0.1.1, and software versions and routing settings that live in `Routing.ipynb`) are entered in cell 7 as literals and marked as such.
 
 ## File and field reference
 
@@ -537,7 +542,7 @@ Geometry: Point, EPSG:4326 (OGC:CRS84), at the geocoded destination. Null on the
 | `Destination Geocode Correct` | Manual verdict on the destination point (true / false / null). |
 | `Route Correct` | Manual verdict on the routed path (true / false / null). |
 
-Note: across all 839 records, this file's haul columns sum to 134,180 10-ton and 52,853 20-ton hauls, because `Routing.ipynb` recomputes them. The totals in §2.3 (154,455 and 43,087) are the haul columns of `processed_manure_manifests.csv`. The validated subtotals (76,166 and 29,083) come from this file.
+Note: across all 839 records, this file's haul columns sum to 134,180 10-ton and 52,853 20-ton hauls (§2.3). `Routing.ipynb` recomputes them with the same rule `manifest_preparation.ipynb` uses, so they equal the haul columns of `processed_manure_manifests.csv`. The validated subtotals (76,166 and 29,083) come from this file.
 
 #### `outputs/results/routing/pair_cache/exposure_pairs_500m.pkl`
 
@@ -574,7 +579,7 @@ Each row is one manure transport record: one haul entry on a manifest attached t
   - the manure records (§2.1)
   - 2,406,173 tons and the destination-type shares (§3.1, Fig. 2a)
   - destination address forms (Fig. 2b)
-  - 154,455 10-ton and 43,087 20-ton hauls in the haul columns (§2.3)
+  - 134,180 10-ton and 52,853 20-ton hauls in the haul columns (§2.3)
   - the 10-ton share, and the 828 dated / 567 last-date-only records (SI 0.1.1)
   - Fig. S4 and Table S6
   - records linked to dairies (SI 0.1.4, Fig. 5)
@@ -603,8 +608,8 @@ Each row is one manure transport record: one haul entry on a manifest attached t
 | Manure Number of Hauls | Number of loads, parsed from the same text. Blank on 745 rows. |
 | Total Manure Amount (tons) | Total manure hauled on the record, in US short tons, as reported on the manifest, rounded to 0.1 t. Converted from cubic yards ÷ density when only a volume is reported. Filled on every row. |
 | Manure Solids (%) | Solids content (%) as reported on the manifest. Values above 100 are removed. When only moisture is reported, this is 100 − moisture %. Blank on 130 rows. |
-| Number of 10-ton Hauls for Analysis | One-way loaded hauls assigned to 10-ton trucks. If the manifest reports both haul size and haul count, this is the reported count when the size is 5 to under 15 t, and 0 when it is 15 to under 25 t. Otherwise it is estimated as round(total tons × p / 10), where p ≈ 0.64 is the 10-ton bin's share of tonnage on manifests that report a haul size. |
-| Number of 20-ton Hauls for Analysis | The same for 20-ton trucks (15 to under 25 t). The estimate is round(total tons × (1 − p) / 20). |
+| Number of 10-ton Hauls for Analysis | One-way loaded hauls assigned to 10-ton trucks. If the manifest reports both haul size and haul count, this is the reported count when the size is 5 to under 15 t, and 0 when it is 15 t or more. Otherwise it is estimated as round(total tons × p / 10), where p ≈ 0.56 is the 10-ton bin's share of tonnage on manifests that report a haul size. A manifest of under 10 t in total is one 10-ton haul. |
+| Number of 20-ton Hauls for Analysis | The same for 20-ton trucks (15 t or more per load). The estimate is round(total tons × (1 − p) / 20), and 0 for a manifest under 10 t. |
 
 #### outputs/review/manifests/processed_wastewater_manifests.csv
 
@@ -648,8 +653,8 @@ Each row is one process-wastewater transport record from a manifest attached to 
 
 Each row is one manifest template (form variant) found among the 2024 manifests. The file has 18 rows.
 
-- **Producer:** compiled by hand; no script writes it, and no script reads it. Fig. S1b is drawn from `2024_manifest_template_counts.csv` instead.
-- **Manuscript:** the attachment letter, general order, page count and file example columns of Table S1. Its `Number of manifests 2024` counts are an earlier hand tally (1,244 documents over 14 templates) and are superseded by `2024_manifest_template_counts.csv`. Table S1 leaves out `Template “name”`, `Number of manifests 2024`, `Notes` and `URL of template`. Its percentages and some file examples do not match this file (e.g. R5-2007-0035 Variant 2 is 5.5% in Table S1 and blank here).
+- **Producer:** compiled by hand; no script writes it. `Analysis.ipynb` cell 6 reads its descriptive columns for Table S1, which cell 7 writes to `SI_Tables.md`. Fig. S1b is drawn from `2024_manifest_template_counts.csv`.
+- **Manuscript:** the attachment letter, general order, page count and file example columns of Table S1. Its `Number of manifests 2024` counts are an earlier hand tally (1,244 documents over 14 templates) and are superseded by `2024_manifest_template_counts.csv`. Table S1 leaves out `Template “name”`, `Number of manifests 2024`, `Percent of 2024 manifests`, `Notes` and `URL of template`, and drops the R5-2017-0058 General Order row, which has no 2024 manifests.
 
 | Field | Description |
 |---|---|
@@ -820,7 +825,7 @@ Each row is one manifest field, followed by two summary rows. The value is the n
   - Two values agree if any libpostal spelling of one, reduced to lowercase letters and digits, equals a spelling of the other.
   - A field is listed only if it has at least 50 non-blank values on both sides. These are the same fields shown in Fig. S10.
   - `Is Trucked` is compared on wastewater records only, because every manure record is trucked on both sides.
-- **Manuscript:** the correction counts in SI Methods 0.1.1. The per-field accuracy percentages in Fig. S10 come from the same comparison but are not stored here.
+- **Manuscript:** the correction counts in SI Methods 0.1.1. The per-field accuracy percentages in Fig. S10 come from the same comparison but are not stored here; `Analysis.ipynb` cell 6 recomputes them from these counts and the number of records compared per field.
 
 | Field | Description |
 |---|---|
@@ -934,7 +939,7 @@ Each row is one manifest form template (18 rows), with the keyword rule used to 
 
 - **Producer:** written by hand. Cell 4 reads it, and `find_template()` in cell 9 uses it to assign each manifest's `Form Template`.
 - **How a template is assigned:** rows are tested in file order and the first match wins. If nothing matches, the `Form Template` is `unknown` and the manifest is read with the `R5-2007-0035_general_order` layout.
-- **Manuscript:** the template classification in SI Methods 0.1.1 that underlies Table S1.
+- **Manuscript:** the template classification in SI Methods 0.1.1 that underlies Table S1. The number of distinct `layout` values among the templates with 2024 forms is `\NManifestLayouts` (14), counted by `Analysis.ipynb` cell 6.
 
 | Field | Description |
 |---|---|
@@ -943,6 +948,7 @@ Each row is one manifest form template (18 rows), with the keyword rule used to 
 | keywords | Rule tested against the upper-cased, cleaned manifest text. `\|` separates alternatives, `&&` separates groups that must all match, and a group starting with `!` must be absent, e.g. `INNOVATIVE AG && !ATTACHMENT D`. |
 | page_count | Number of pages the manifest must span for the template to match. Blank matches any length. |
 | parameter_template | The field layout in `parameter_locations.csv` that the template shares. It is written to `Parameter Template`. |
+| layout | Page layout of the template: the `template_key` of the template whose pages it matches apart from the header, otherwise its own `template_key`. The three retyped copies of Attachment D (`R5-2007-0035 Variant 1`–`3`) have `R5-2007-0035 General Order`. Not read by the extraction notebook. |
 
 #### review/manifests/helpers/common_errors.csv
 
@@ -1010,7 +1016,7 @@ Each row is one 2024 dairy annual report (one facility) in the 795-report analys
 
 **Read by:** `analysis/Analysis.ipynb` cells 1 and 4. `build_report_formats.py`, `geocode_dairy_addresses.py`, `scraper/crop_removal.py` and `scraper/build_review.py` also read it.
 
-**Manuscript:** the 795-report sample (§2.1, SI 0.1.1); Figs. 3a–d, 4a (herd table converted to animal units), 5b, S5, S7d–f and S9; Table S5 (herd size of the origin dairy). It also backs values quoted in §3.1 (716 complete reports, 1,783,114 head, 30.7 M tons of manure, 23.4 B gal of wastewater), §3.2, and SI 0.1.2 and 0.1.4.
+**Manuscript:** the 795-report sample (§2.1, SI 0.1.1); Figs. 3a–d, 4a (herd table converted to animal units), 5b, S5, S7d–f and S9; Table S5 (herd size of the origin dairy). It also backs values quoted in §3.1 (complete reports, herd, manure and wastewater totals), §3.2, and SI 0.1.2 and 0.1.4; the current values are in `outputs/results/Manuscript_Parameters.csv`. Rows with `Source Form Type` = `Livingston` are left out of the nitrogen accounting (Figs. 3a and 5 and the unaccounted-for total; `Analysis.ipynb` cell 3) but stay in the herd, manure and wastewater totals. Those totals count every dairy report with at least 2 cattle and a dry-manure nitrogen figure (735), and sum wastewater over the 718 that state it.
 
 All quantities are 2024 annual totals. "Earlier-parse only" means the column is filled for the 580 Robertson et al. rows and blank for the 215 scraped rows.
 
@@ -1087,7 +1093,7 @@ Each row is one row of the report summary (795 rows, same order, keyed on `Sourc
 | Field | Description |
 |---|---|
 | `Source PDF` | Summary row key. |
-| `Form Type` | Values: `Standard form` (690), `Innovative Ag Services form` (83), `Livingston Dairy Consulting form` (20), and `Standard + Innovative Ag Services` (2; a packet with both standard pages and IAS markers). |
+| `Form Type` | Values: `Standard form` (692), `Innovative Ag Services form` (83), `Livingston Dairy Consulting form` (18), and `Standard + Innovative Ag Services` (2; a packet with both standard pages and IAS markers). |
 | `Source` | How `Form Type` was decided. `detector` (760): form markers were found in the matched PDF. `report summary` (20): the detector found nothing, so the summary's `Source Form Type` was used. `earlier parse inclusion criterion` (15): no PDF was matched, so the row is assigned `Standard form` because Robertson et al. admitted only standard-form reports. |
 | `Consultant` | Consultant firm named in the first 25 pages of the matched PDF: `IAS`, `Livingston` or blank. |
 | `Has Standard Pages` | `1` if standard-form markers ("General Order No. R5-2007-0035", "DAIRY FACILITY INFORMATION", "AVAILABLE NUTRIENTS") appear in the first 25 pages, else `0`. Blank when no file was matched. |

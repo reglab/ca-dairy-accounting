@@ -1,0 +1,85 @@
+% Tables S2-S4 of the Supplementary Information, written by
+% analysis/Analysis.ipynb (cell 7). These tables describe the manifest
+% fields and keyword rules, so their text is set in that cell.
+
+% === Table S2
+\begin{longtable}{| >{\raggedright\arraybackslash}p{4.4cm} | >{\raggedright\arraybackslash}p{1.6cm} | >{\raggedright\arraybackslash}p{1.9cm} | >{\raggedright\arraybackslash}p{5.2cm} |}
+\caption{All manifest parameter fields and post-processing applied.} \\
+\hline
+\textbf{Parameter Name} & \textbf{Data Type} & \textbf{Manifest Type} & \textbf{Post-Processing Applied} \\
+\hline
+Origin Dairy Name & text & both &  \\
+\hline
+Origin Dairy Address & text & both & Filled from annual report address if missing. Geocoding \\
+\hline
+Hauler Name & text & both &  \\
+\hline
+Hauler Address & text & both & Geocoding \\
+\hline
+Destination Name & text & both &  \\
+\hline
+Destination Contact Address & text & both & Geocoding \\
+\hline
+Destination Address & text & both & Geocoding, querying the address together with its cross street and county first, if given \\
+\hline
+Destination Nearest Cross Street & text & both & Geocoding, only where two distinct street names are given and the geocoder returns a street intersection \\
+\hline
+Destination Type & text & both & Standardization of categories \\
+\hline
+Destination Assessor Parcel Number & text & both & Geocoding against the statewide parcel locator, within counties covered by ZIP codes in the manifest \\
+\hline
+Destination Latitude & numeric & both &  \\
+\hline
+Destination Longitude & numeric & both &  \\
+\hline
+Haul Date & text & both & Parsed into First Haul Date (if applicable) and Last Haul Date \\
+\hline
+Is Pipeline & boolean & both & Set true if ``pipeline'' or ``ditch'' is included in the manifest text \\
+\hline
+Is Trucked & boolean & both & Always true for manure. For wastewater, ``True'' if number of hauls, trucks, or tanks are mentioned, ``False'' if Is Pipeline, otherwise ``Unsure'' \\
+\hline
+Total Process Wastewater Exports (Gallons) & numeric & wastewater &  \\
+\hline
+Total Manure Amount (tons) & numeric & manure &  \\
+\hline
+Total Manure Amount (cubic yards) & numeric & manure & Converted to tons by dividing by Manure Density (cubic yards per ton) \\
+\hline
+Manure Density & numeric & manure &  \\
+\hline
+Manure Solids (\%) & numeric & manure &  \\
+\hline
+Manure Moisture (\%) & numeric & manure & Converted to Solids \% \\
+\hline
+Method Used to Determine Volume of Manure & text & manure & Broken out into Manure Mass per Haul (tons), Manure Volume per Haul (cubic yards), and Manure Number of Hauls as relevant \\
+\hline
+Method Used to Determine Volume of Wastewater & text & wastewater & Broken out into Wastewater Volume per Haul (Gallons), Wastewater Number of Hauls, Wastewater Hours Pumped (Hours), and Wastewater Pumping Rate (GPM), as relevant \\
+\hline
+\end{longtable}
+
+% === Table S3
+\begin{longtable}{| >{\raggedright\arraybackslash}p{2.6cm} | >{\raggedright\arraybackslash}p{3.8cm} | >{\raggedright\arraybackslash}p{6.6cm} |}
+\caption{Determining trucked versus pipeline wastewater transport.} \\
+\hline
+\textbf{Transport Type} & \textbf{Detection Keywords} & \textbf{Text Examples} \\
+\hline
+Pipeline & ``pipeline'' or ``ditch'' & (via concrete ditch)\newline Pipeline\newline LUMAR PIPELINE \\
+\hline
+Trucked & ``load'', ``haul'', or ``tank'' (without ``apply'' or ``applied'') & 247 Loads @ 9500 Gallons Per Load.\newline Haulers Calc\newline Hauler's Calculations\newline 100 Loads With Slurry Tankers-8400 Gallons/Load\newline Number Of Loads Multiplied By Tank Volume \\
+\hline
+\end{longtable}
+
+% === Table S4
+\begin{longtable}{| >{\raggedright\arraybackslash}p{2.6cm} | >{\raggedright\arraybackslash}p{3.8cm} | >{\raggedright\arraybackslash}p{6.6cm} |}
+\caption{Methods used to calculate wastewater volume.} \\
+\hline
+\textbf{Calculation Method} & \textbf{Data Extracted} & \textbf{Text Examples} \\
+\hline
+Flowrate-based & Hours pumped, pumping rate (GPM) & Gpm X Runtime\newline Run-Times Multiplied By The Gpm Of The Lagoon Pump.\newline 6 Hours @ 1000 Gpm\newline 20 Hours At 1500 Gallons Per Minute\newline Hours Pumped X 1200 Gpm\newline 8 Hours Of Liquid Manure @ 1000 Gallons Per Minute \\
+\hline
+Pond level-based & Pond level drop & Pond Drop Calculation Based On 5 Feet Drop In First Quarter\newline Pond Drop Calculations\newline PD \\
+\hline
+Haul-based & Number of hauls, volume per haul & 247 Loads @ 9500 Gallons Per Load.\newline 370 Loads X 10000 Gallons\newline Number Of Loads Multiplied By Tank Volume\newline 100 Loads With Slurry Tankers-8400 Gallons/Load\newline Slurry Tankers - 250 loads at 8,400 gallons per load.\newline Haulers Load Count-17 Loads At 9500 Gallons Per Load.\newline 150 Loads At 9500 Gals/Load\newline 60 Loads Of Surry @ 9500 Gallons Per Load.\newline 10000 Gallons Per Load X 282 Loads\newline @ 10000 Gallons Per Load \\
+\hline
+Other/Unspecified & Varies & Tank Capacity Multiplied By The Number Of Tanks Applied\newline Precipitation Records\newline Estimated Annual Total To Independent Farming Field.\newline PO \\
+\hline
+\end{longtable}
