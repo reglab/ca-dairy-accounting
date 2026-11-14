@@ -3,36 +3,36 @@
 Written by `analysis/Analysis.ipynb`, which also writes Tables S2 to S4 on their own to `SI_Tables_S2_S4.tex`.
 Each block is a `longtable` that needs `\usepackage{array,longtable}`. The captions use the
 macros in `outputs/results/Manuscript_Parameters.tex`, so that file must be `\input` first.
-`\cite{ref45}` and `\cite{ref46}` stand for references [45] and [46] (the Census Place and
-ACS population sources); replace them with the project's citation keys.
+The citation keys are the manuscript's (`Census_Place_Shp_2024`, `Census_Places`).
 
 ## Table S1
 
 ```latex
+{\setlength{\LTleft}{\fill}\setlength{\LTright}{\fill}
 \begin{longtable}{| >{\raggedright\arraybackslash}p{3.2cm} | >{\centering\arraybackslash}p{1.6cm} | >{\raggedright\arraybackslash}p{2.2cm} | >{\raggedleft\arraybackslash}p{1.2cm} | >{\raggedleft\arraybackslash}p{1.9cm} | >{\raggedright\arraybackslash}p{3.4cm} |}
-\caption{Breakdown of 2024 Water Board manure and wastewater transport manifests by form template used. In total, there were \NManifestTemplates{} unique templates on \NManifestLayouts{} unique page formats. The percentages include the \NManifestsAnalyzed{} manifests analyzed in the main manuscript plus \NDuplicatesCag{} duplicates where a facility submitted two different form templates for the same hauling event(s).} \\
+\caption{Breakdown of 2024 Water Board manure and wastewater transport manifests by form template used. In total, there were \NManifestTemplates{} unique templates on \NManifestLayouts{} unique page formats. The percentages are of the \NManifestsAnalyzed{} manifests analyzed in the main manuscript and exclude \NDuplicatesCag{} duplicates where a facility submitted two different form templates for the same hauling event(s).} \\
 \hline
-\textbf{Template ID} & \textbf{Attachment Letter} & \textbf{General Order Referenced} & \textbf{Page Count} & \textbf{Percent of All Submitted Manifests} & \textbf{File example} \\
+\textbf{Template ID} & \textbf{Attachment Letter} & \textbf{General Order Referenced} & \textbf{Page Count} & \textbf{Percent of Analyzed Manifests} & \textbf{File example} \\
 \hline
-R5-2007-0035 Software & D & R5-2007-0035 & 2 & 33.6\% & 13701 S Hwy 59 El Nido 2024 Dairy AR \\
+R5-2007-0035 Software & D & R5-2007-0035 & 2 & 34.0\% & 13701 S Hwy 59 El Nido 2024 Dairy AR \\
 \hline
-R5-2007-0035 General Order & D & R5-2007-0035 & 2 & 42.4\% & 20000 Cedar Ave Tracy 2024 Dairy AR (manifests 1--2) \\
+R5-2007-0035 General Order & D & R5-2007-0035 & 2 & 42.8\% & 20000 Cedar Ave Tracy 2024 Dairy AR (manifests 1--2) \\
 \hline
 R5-2007-0035 Variant 1 & D & R5-2007-0035 & 2 & 0.5\% & 13775 Murphy Rd Escalon 2024 Dairy AR \\
 \hline
-R5-2007-0035 Variant 2 & D & R5-2007-0035 & 2 & 5.5\% & 348 E Monte Vista Rd Ceres 2024 Dairy AR \\
+R5-2007-0035 Variant 2 & D & R5-2007-0035 & 2 & 5.6\% & 348 E Monte Vista Rd Ceres 2024 Dairy AR \\
 \hline
 R5-2007-0035 Variant 3 & N/A & R5-2007-0035 & 2 & 0.1\% & 17399 E Avena Rd Escalon 2024 Dairy AR \\
 \hline
 R5-2007-0035 Variant 4 & D & R5-2007-0035 & 1 & 2.6\% & 2023AR\_F \& L Barcellos \#2\_7585 Avenue 152\_W Tulare \\
 \hline
-R5-2007-0035 Variant 5 & D & R5-2007-0035 & 1 & 2.1\% & 2024AR\_Faial Farms 2 Dairy \\
+R5-2007-0035 Variant 5 & D & R5-2007-0035 & 1 & 2.2\% & 2024AR\_Faial Farms 2 Dairy \\
 \hline
 R5-2010-XXXX Attachment G & G & R5-2010-XXXX & 2 & 0.2\% & 2024AR\_The Dairy Inc\_6240 21st Ave\_Kings \\
 \hline
 R5-2010-XXXX Attachment F & F & R5-2010-XXXX & 2 & 0.1\% & 2024AR\_K A Vanderham Dairy\_12565 Ave 152\_Tulare \\
 \hline
-R5-2013-0122 General Order & D & R5-2013-0122 & 2 & 10.3\% & 13436 N Thornton Rd Lodi 2024 Dairy AR \\
+R5-2013-0122 General Order & D & R5-2013-0122 & 2 & 10.4\% & 13436 N Thornton Rd Lodi 2024 Dairy AR \\
 \hline
 R5-2017-0058 Variant 1 & D & R5-2017-0058 & 3 & 0.1\% & 2024AR\_Contente \& Co Ranch\_5730 20th Ave\_Kings \\
 \hline
@@ -44,16 +44,18 @@ UCANR & N/A & N/A & 1 & 0.1\% & 20000 Cedar Ave Tracy 2024 Dairy AR (manifest 3)
 \hline
 Unknown Variant 1 & N/A & N/A & 1 & 0.2\% & 2024AR\_Moonstone Dairy\_1305 Iona Avenue\_Kings \\
 \hline
-CAG018001 & 4 & CAG018001 & 1 & 1.2\% & 2024AR\_John Jongsma Dairy\_15434 Ave 192\_Tulare \\
+CAG018001 & 4 & CAG018001 & 1 & 0.2\% & 2024AR\_John Jongsma Dairy\_15434 Ave 192\_Tulare \\
 \hline
 Innovative Ag & N/A &  & 2 & 0.1\% & 2024AR\_South Creek Dairy\_11450 Avenue 64\_W Tulare \\
 \hline
 \end{longtable}
+}
 ```
 
 ## Table S2
 
 ```latex
+{\setlength{\LTleft}{\fill}\setlength{\LTright}{\fill}
 \begin{longtable}{| >{\raggedright\arraybackslash}p{4.4cm} | >{\raggedright\arraybackslash}p{1.6cm} | >{\raggedright\arraybackslash}p{1.9cm} | >{\raggedright\arraybackslash}p{5.2cm} |}
 \caption{All manifest parameter fields and post-processing applied.} \\
 \hline
@@ -106,6 +108,7 @@ Method Used to Determine Volume of Manure & text & manure & Broken out into Manu
 Method Used to Determine Volume of Wastewater & text & wastewater & Broken out into Wastewater Volume per Haul (Gallons), Wastewater Number of Hauls, Wastewater Hours Pumped (Hours), and Wastewater Pumping Rate (GPM), as relevant \\
 \hline
 \end{longtable}
+}
 ```
 
 ## Table S3
@@ -127,7 +130,7 @@ Trucked & ``load'', ``haul'', or ``tank'' (without ``apply'' or ``applied'') & 2
 
 ```latex
 \begin{longtable}{| >{\raggedright\arraybackslash}p{2.6cm} | >{\raggedright\arraybackslash}p{3.8cm} | >{\raggedright\arraybackslash}p{6.6cm} |}
-\caption{Methods used to calculate wastewater volume.} \\
+\caption{Methods used to calculate wastewater volume for transport manifest exports.} \\
 \hline
 \textbf{Calculation Method} & \textbf{Data Extracted} & \textbf{Text Examples} \\
 \hline
@@ -200,10 +203,10 @@ All dropped & 233 & 2,587.0 & $-$0.9 & $-$0.02 & 0.594 \\
 ## Table S6
 
 ```latex
-\begin{longtable}{| >{\raggedleft\arraybackslash}p{0.8cm} | >{\raggedright\arraybackslash}p{3.8cm} | >{\raggedleft\arraybackslash}p{1.6cm} | >{\raggedleft\arraybackslash}p{1.3cm} | >{\raggedleft\arraybackslash}p{1.3cm} | >{\raggedleft\arraybackslash}p{1.3cm} | >{\raggedleft\arraybackslash}p{1.5cm} | >{\raggedright\arraybackslash}p{1.5cm} |}
-\caption{Largest receivers of dairy-exported manure across \NManureRecords{} manure manifest records. The tonnage percentages are shares of total manifested manure exports from manifests with an address.} \\
+\begin{longtable}{| >{\raggedleft\arraybackslash}p{0.64cm} | >{\raggedright\arraybackslash}p{2.85cm} | >{\raggedleft\arraybackslash}p{1.6cm} | >{\raggedleft\arraybackslash}p{1.3cm} | >{\raggedleft\arraybackslash}p{1.3cm} | >{\raggedleft\arraybackslash}p{1.3cm} | >{\raggedleft\arraybackslash}p{1.5cm} | >{\raggedright\arraybackslash}p{1.5cm} |}
+\caption{Largest receivers of dairy-exported manure across \NManureRecords{} manure manifest records. The tonnage percentages are shares of total manifested manure exports from manifests with an address. Address types are as in Fig. 2b.} \\
 \hline
-\textbf{Rank} & \textbf{Destination} & \textbf{Tonnage} & \textbf{Records} & \textbf{Origin dairies} & \textbf{\% of tonnage} & \textbf{Cumulative \%} & \textbf{Address type} \\
+\textbf{Rank} & \textbf{Destination} & \textbf{Tonnage} & \textbf{Records} & \textbf{Origin dairies} & \textbf{\% of tonnage} & \textbf{Cum. \%} & \textbf{Address type} \\
 \hline
 1 & 2312 ALPINE MEADOWS CT WASCO & 168,913 & 13 & 3 & 7.17 & 7.17 & street \\
 \hline
@@ -223,13 +226,13 @@ All dropped & 233 & 2,587.0 & $-$0.9 & $-$0.02 & 0.594 \\
 \hline
 9 & P.O. Box 20370 BAKERSFIELD & 47,247 & 7 & 2 & 2.01 & 36.66 & P.O. Box \\
 \hline
-10 & EL NIDO COYOTE RD & 37,044 & 5 & 2 & 1.57 & 38.24 & street \\
+10 & EL NIDO COYOTE RD & 37,044 & 5 & 2 & 1.57 & 38.24 & place \\
 \hline
 11 & 4322 SACO RD BAKERSFIELD & 36,100 & 6 & 2 & 1.53 & 39.77 & street \\
 \hline
 12 & 6801 AVENUE 120 PIXLEY & 32,050 & 4 & 1 & 1.36 & 41.13 & street \\
 \hline
-13 & SOUTH LAKE ROAD BAKERSFIELD & 27,638 & 3 & 1 & 1.17 & 42.30 & street \\
+13 & SOUTH LAKE ROAD BAKERSFIELD & 27,638 & 3 & 1 & 1.17 & 42.30 & place \\
 \hline
 14 & 5175 SHAW AVE WINTON & 25,913 & 13 & 3 & 1.10 & 43.40 & street \\
 \hline
@@ -251,30 +254,30 @@ All dropped & 233 & 2,587.0 & $-$0.9 & $-$0.02 & 0.594 \\
 ## Table S7
 
 ```latex
-\begin{longtable}{| >{\raggedleft\arraybackslash}p{0.6cm} | >{\raggedleft\arraybackslash}p{0.8cm} | >{\raggedright\arraybackslash}p{1.4cm} | >{\raggedright\arraybackslash}p{1.8cm} | >{\raggedright\arraybackslash}p{1.2cm} | >{\raggedright\arraybackslash}p{2.0cm} | >{\raggedright\arraybackslash}p{1.3cm} | >{\raggedright\arraybackslash}p{1.2cm} | >{\raggedleft\arraybackslash}p{1.0cm} | >{\raggedleft\arraybackslash}p{0.9cm} | >{\raggedleft\arraybackslash}p{1.2cm} | >{\raggedleft\arraybackslash}p{1.2cm} |}
+\begin{longtable}{| >{\raggedleft\arraybackslash}p{0.6cm} | >{\raggedleft\arraybackslash}p{0.8cm} | >{\raggedright\arraybackslash}p{1.4cm} | >{\raggedright\arraybackslash}p{1.8cm} | >{\raggedright\arraybackslash}p{2.0cm} | >{\raggedright\arraybackslash}p{1.3cm} | >{\raggedleft\arraybackslash}p{1.0cm} | >{\raggedleft\arraybackslash}p{0.9cm} | >{\raggedleft\arraybackslash}p{1.2cm} |}
 \caption{The ten longest validated manure trucking records sorted by one-way routed travel distance. Identical origin-destination pairs can have multiple trucking records, denoted here by the Route ID.} \\
 \hline
-\textbf{Rank} & \textbf{Route ID} & \textbf{Origin dairy} & \textbf{Origin address} & \textbf{Origin county} & \textbf{Destination address} & \textbf{Dest. type} & \textbf{Dest. county} & \textbf{One-way miles} & \textbf{Total trips} & \textbf{Manure (tons)} & \textbf{Loaded truck-mi} \\
+\textbf{Rank} & \textbf{Route ID} & \textbf{Origin dairy} & \textbf{Origin address} & \textbf{Destination address} & \textbf{Dest. type} & \textbf{One-way miles} & \textbf{Total trips} & \textbf{Manure (tons)} \\
 \hline
-1 & 387 & Dutch Door Dairy & 3493 Bvd Rd Merced Merced 95341 & Merced & 16510 Bacon Island Rd Stockton CA 95234 & Farmer & San Joaquin & 104.0 & 129 & 1,650.0 & 13,414 \\
+1 & 387 & Dutch Door Dairy & 3493 Bvd Rd Merced Merced 95341 & 16510 Bacon Island Rd Stockton CA 95234 & Farmer & 104.0 & 129 & 1,650.0 \\
 \hline
-2 & 104 & Troost Dairy & 27000 Road 9 Chowchilla Madera 93610 & Madera & 20177 S Macarthur Dr Tracy 95304 San Joaquin & Farmer & San Joaquin & 89.4 & 101 & 1,304.3 & 9,026 \\
+2 & 104 & Troost Dairy & 27000 Road 9 Chowchilla Madera 93610 & 20177 S Macarthur Dr Tracy 95304 San Joaquin & Farmer & 89.4 & 101 & 1,304.3 \\
 \hline
-3 & 105 & Troost Dairy & 27000 Road 9 Chowchilla Madera 93610 & Madera & 20177 S Macarthur Dr Tracy 95304 San Joaquin & Farmer & San Joaquin & 89.4 & 43 & 554.0 & 3,843 \\
+3 & 105 & Troost Dairy & 27000 Road 9 Chowchilla Madera 93610 & 20177 S Macarthur Dr Tracy 95304 San Joaquin & Farmer & 89.4 & 43 & 554.0 \\
 \hline
-4 & 107 & Troost Dairy & 27000 Road 9 Chowchilla Madera 93610 & Madera & 20177 S Macarthur Dr Tracy 95304 San Joaquin & Farmer & San Joaquin & 89.4 & 69 & 884.6 & 6,166 \\
+4 & 107 & Troost Dairy & 27000 Road 9 Chowchilla Madera 93610 & 20177 S Macarthur Dr Tracy 95304 San Joaquin & Farmer & 89.4 & 69 & 884.6 \\
 \hline
-5 & 249 & Flint Dairy & 6511 Flint Ave. Hanford Kings 93230 & Kings & 7745 E Sandymush Merced 95341 Merced & Farmer & Merced & 77.9 & 308 & 3,970.8 & 23,982 \\
+5 & 249 & Flint Dairy & 6511 Flint Ave. Hanford Kings 93230 & 7745 E Sandymush Merced 95341 Merced & Farmer & 77.9 & 308 & 3,970.8 \\
 \hline
-6 & 474 & Van Tol Dairy No. 2 & 6756 County Road 30 Orland Glenn 95963 & Glenn & 82 West Liberty Road Gridle 95948 County & Composting Facility & Butte & 64.7 & 53 & 685.0 & 3,430 \\
+6 & 474 & Van Tol Dairy No. 2 & 6756 County Road 30 Orland Glenn 95963 & 82 West Liberty Road Gridle 95948 County & Composting Facility & 64.7 & 53 & 685.0 \\
 \hline
-7 & 70 & Morning Star Dairy Inc & 10262 W Elkhorn Ave Burrel Fresno 93607 & Fresno & 18919 Ave 23 Chowchilla 93610 Madera & Composting Facility & Madera & 50.6 & 153 & 1,968.2 & 7,741 \\
+7 & 70 & Morning Star Dairy Inc & 10262 W Elkhorn Ave Burrel Fresno 93607 & 18919 Ave 23 Chowchilla 93610 Madera & Composting Facility & 50.6 & 153 & 1,968.2 \\
 \hline
-8 & 2 & Banos Dairy & 4667 Avenue 23 1/2 Chowchilla Madera 93610 & Madera & 1275 North Avenue Gustine 95322 North Avenue Merced & Broker & Merced & 47.5 & 140 & 1,800.0 & 6,650 \\
+8 & 2 & Banos Dairy & 4667 Avenue 23 1/2 Chowchilla Madera 93610 & 1275 North Avenue Gustine 95322 North Avenue Merced & Broker & 47.5 & 140 & 1,800.0 \\
 \hline
-9 & 3 & Banos Dairy & 4667 Avenue 23 1/2 Chowchilla Madera 93610 & Madera & 1275 North Avenue Gustine 95322 North Avenue Merced & Broker & Merced & 47.5 & 164 & 2,100.0 & 7,790 \\
+9 & 3 & Banos Dairy & 4667 Avenue 23 1/2 Chowchilla Madera 93610 & 1275 North Avenue Gustine 95322 North Avenue Merced & Broker & 47.5 & 164 & 2,100.0 \\
 \hline
-10 & 140 & Avalon Dairy & 27225 Rond Rd Wasco 93280 & Kern & 9442 Bear Mtn Blvd 93311 & Broker & Kern & 47.2 & 719 & 9,240.0 & 33,920 \\
+10 & 140 & Avalon Dairy & 27225 Rond Rd Wasco 93280 & 9442 Bear Mtn Blvd 93311 & Broker & 47.2 & 719 & 9,240.0 \\
 \hline
 \end{longtable}
 ```
@@ -283,7 +286,7 @@ All dropped & 233 & 2,587.0 & $-$0.9 & $-$0.02 & 0.594 \\
 
 ```latex
 \begin{longtable}{| >{\raggedleft\arraybackslash}p{1.2cm} | >{\raggedright\arraybackslash}p{6.0cm} | >{\raggedleft\arraybackslash}p{3.0cm} |}
-\caption{Communities with the largest total manure trucking miles, based on borders provided by the Census Place dataset \cite{ref46}. Truck-miles are allotted based on the fraction of \RoadBufferM{} m road buffers falling inside the borders of each Census Place.} \\
+\caption{Communities with the largest total manure trucking miles, based on borders provided by the Census Place dataset \cite{Census_Place_Shp_2024}. Truck-miles are allotted based on the fraction of \RoadBufferM{} m road buffers falling inside the borders of each Census Place.} \\
 \hline
 \textbf{Rank} & \textbf{Place} & \textbf{Truck-miles} \\
 \hline
@@ -334,7 +337,7 @@ All dropped & 233 & 2,587.0 & $-$0.9 & $-$0.02 & 0.594 \\
 
 ```latex
 \begin{longtable}{| >{\raggedleft\arraybackslash}p{1.2cm} | >{\raggedright\arraybackslash}p{6.0cm} | >{\raggedleft\arraybackslash}p{3.0cm} |}
-\caption{Communities with the most manure trucking miles per resident. Population is derived from 2020-2024 ACS five-year estimates \cite{ref45}.} \\
+\caption{Communities with the most manure trucking miles per resident. Population is derived from 2020-2024 ACS five-year estimates \cite{Census_Places}.} \\
 \hline
 \textbf{Rank} & \textbf{Place} & \textbf{Truck-miles per resident} \\
 \hline
@@ -385,7 +388,7 @@ All dropped & 233 & 2,587.0 & $-$0.9 & $-$0.02 & 0.594 \\
 
 ```latex
 \begin{longtable}{| >{\raggedleft\arraybackslash}p{1.2cm} | >{\raggedright\arraybackslash}p{6.0cm} | >{\raggedleft\arraybackslash}p{3.0cm} |}
-\caption{Communities with the most manure trucking miles per square mile. Area of communities is derived from Census Place outlines \cite{ref46}.} \\
+\caption{Communities with the most manure trucking miles per square mile. Area of communities is derived from Census Place outlines \cite{Census_Place_Shp_2024}.} \\
 \hline
 \textbf{Rank} & \textbf{Place} & \textbf{Truck-miles per mi$^2$} \\
 \hline

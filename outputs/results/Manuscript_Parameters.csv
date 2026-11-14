@@ -1,6 +1,6 @@
 name,value,raw,kind,section,description,source
 NReportsAnalyzed,795,795,result,Abstract and Introduction,dairy annual reports in the analysis sample,"cell 3, len(rep_all)"
-UnaccNMillionLb,73.0,73023898.59,result,Abstract and Introduction,"unaccounted-for N over the complete reports, Livingston forms left out (million lb)","cell 3, UNACC_TOTAL_LB"
+UnaccNMillionLb,72.1,72141035.87,result,Abstract and Introduction,"unaccounted-for N over the Figure 3a dairies, as in Section 3.2 (million lb)","cell 3, WATERFALL"
 TruckMilesMillion,2.28,2282496.4723420897,result,Abstract and Introduction,validated truck-miles including return trips (million),"cell 0, t10 + t20"
 DieselGalRounded,"356,000",355539.8169051044,result,Abstract and Introduction,"diesel burned, nearest thousand gallons","cell 0, _gal_tot"
 NTransportRecords,"1,266",1266,result,Abstract and Introduction,manure plus wastewater transport records,"cell 0, len(manure_df) + len(ww_df)"
@@ -140,6 +140,8 @@ PlacePerAreaFirstName,Tipton,Tipton CDP,result,Section 3.3 and Figure 4,place ra
 PlacePerAreaFirstMi,"10,908",10908.0,result,Section 3.3 and Figure 4,truck-miles per mi2 of that place,Table S10
 TopResidentsPct,5,5,setting,Section 3.3 and Figure 4,most-exposed share of residents (percent),"cell 2, quantiles printed"
 PctVmtTopResidents,48.7,0.486943956141123,result,Section 3.3 and Figure 4,in-place truck-miles carried by the most-exposed residents,"cell 2, _cum_vmt"
+NPlacesTopResidents,45,45,result,Section 3.3 and Figure 4,"most-exposed places, by truck-miles per resident, that first hold 5% of residents","cell 2, _cum_pop"
+PctResidentsTopPlaces,5.2,0.05219999765646055,result,Section 3.3 and Figure 4,share of exposed-place residents living in those places,"cell 2, _cum_pop"
 NDairiesMapped,686,686,result,Section 3.3 and Figure 4,dairies drawn in Figure 4a,"cell 5, len(_sized)"
 RhoPlacePopExposure,\ensuremath{-}0.504,-0.5042854827103649,result,Section 3.3 and Figure 4,"Spearman rho, place population vs truck-miles per resident (Figure 4f)","cell 5, _rho_5d"
 pPlacePopExposure,\ensuremath{{}\leq 0.001},1.3520813493191136e-10,result,Section 3.3 and Figure 4,p for RhoPlacePopExposure,"cell 5, _p_5d"
@@ -173,6 +175,13 @@ NManifestsManual,56,56,result,SI Methods 0.1.1,manifests whose pages were specif
 NReportsManualManifests,20,20,result,SI Methods 0.1.1,reports holding those manifests,cell 6
 NMissedManifestsOther,2,2,literal,SI Methods 0.1.1,missed manifests corrected during validation (upside-down or out-of-order pages),literal NMissedManifests less cell 6 docs_manual
 NRecordsCompared,"1,105",1105,result,SI Methods 0.1.1,records compared in Figure S10,cell 6
+NRecordsNotScored,156,156,result,SI Methods 0.1.1,"records with no automatically extracted amount, not scored in Figure S10",cell 6
+NManureNotScored,144,144,result,SI Methods 0.1.1,"of those, manure records",cell 6
+NWwNotScored,12,12,result,SI Methods 0.1.1,"of those, wastewater records",cell 6
+NManureRecordsWithAuto,837,837,result,SI Methods 0.1.1,manure records with an automatic extraction record,cell 6
+NManureAmountFound,693,693,result,SI Methods 0.1.1,"of those, records with an automatically extracted manure amount",cell 6
+PctManureAmountFound,82.8,0.8279569892473119,result,SI Methods 0.1.1,share of manure records with an extracted amount,cell 6
+PctManureAmountCorrect,97.0,96.96969696969697,result,SI Methods 0.1.1,extracted manure amounts matching the validated value (Figure S10),"cell 6, s10_stats"
 NRecordsAnyError,635,635,result,SI Methods 0.1.1,records with at least one correction,cell 6
 PctRecordsAnyError,57.5,0.5746606334841629,result,SI Methods 0.1.1,share of compared records with a correction,cell 6
 NRecordsImpactError,500,500,result,SI Methods 0.1.1,records with a correction to a result-relevant field,cell 6

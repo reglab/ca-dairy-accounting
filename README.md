@@ -206,7 +206,7 @@ Every figure that `Analysis.ipynb` produces is also saved as an `.eps` file with
 | `SI_Tables.md` | Tables S1–S10 in LaTeX, with captions | Analysis.ipynb, cell 7 |
 | `SI_Tables_S2_S4.tex` | Tables S2–S4 in LaTeX | Analysis.ipynb, cell 7 |
 
-`SI_Tables.md` holds every SI table as a `longtable` block (`\usepackage{array,longtable}`). Table S1's percentages are `forms_submitted_pct` in `outputs/review/manifests/2024_manifest_template_counts.csv`, and its attachment, order, page-count and file-example columns come from `outputs/review/manifests/Manifest_Formats.csv`. Tables S2–S4 describe the extraction notebook's fields and rules, so their text is set in cell 7 (`SI_TABLES_S2_S4`), which also writes it on its own to `SI_Tables_S2_S4.tex`. Tables S5–S10 are formatted from the same results as the CSV files above.
+`SI_Tables.md` holds every SI table as a `longtable` block (`\usepackage{array,longtable}`). Table S1's percentages are `analysis_pct` (shares of the 1,198 analysed manifests) in `outputs/review/manifests/2024_manifest_template_counts.csv`, and its attachment, order, page-count and file-example columns come from `outputs/review/manifests/Manifest_Formats.csv`. Tables S2–S4 describe the extraction notebook's fields and rules, so their text is set in cell 7 (`SI_TABLES_S2_S4`), which also writes it on its own to `SI_Tables_S2_S4.tex`. Tables S5–S10 are formatted from the same results as the CSV files above.
 
 `outputs/results/Manuscript_Parameters.tex` (cell 7) defines one LaTeX macro for each number the manuscript quotes from these results, and for each analysis setting it quotes (for example `\UnaccNMillionLb` for the unaccounted-for nitrogen in the abstract, or `\pDroppedTons` for a p-value with its relation). Add `\input{Manuscript_Parameters}` to the manuscript preamble; the `SI_Tables.md` captions use the same macros. `Manuscript_Parameters.csv` lists each macro with its value, unrounded value and the cell and variable it comes from. A few counts that no file records (the manual-screening counts in SI Methods 0.1.1, and software versions and routing settings that live in `Routing.ipynb`) are entered in cell 7 as literals and marked as such.
 
@@ -252,7 +252,7 @@ Each row is one of the 20 destinations that received the most manure. Destinatio
 | Nitrogen (lb) | Estimated nitrogen sent, in lb, rounded. Calculated as dry tons × 2.1% N × 2,000 lb/ton, the mid value from the UC Davis Manure Technical Guide. Dry tons = Tons × the manifest's `Manure Solids (%)`. Where a manifest gives no solids value, the tonnage-weighted mean of the manifests that do is used. |
 | % of tonnage | Tons as a percentage of all tonnage on manifests with a non-blank destination key (%). |
 | Cumulative % | Running total of `% of tonnage` from rank 1 down (%). |
-| Address form | `PO box` if the key contains a PO box, otherwise `street`. `street` also covers keys with no house number, such as "EL NIDO COYOTE RD". |
+| Address form | The Figure 2b address class of the receiver's records, by tonnage: `street`, `PO box`, or `place` for a key with no house number, such as "EL NIDO COYOTE RD". |
 | In report set | `yes` if, for any manifest under this key, the destination street key (house number plus the next two words, normalised) matches the address of a dairy that filed a 2024 annual report (`Dairy_Report_Summary_Region_5_2024_with_source_pdf_scraping.csv`). Otherwise `no`. |
 
 #### outputs/results/tables/Table_S7_Longest_Routes.csv
@@ -885,7 +885,7 @@ A 2×2 figure. It shows haul sizes and per-facility export totals from the valid
 Each row is one manifest form template, with a final `Total` row (19 rows).
 
 - **Producer:** cell 23 of `manifest_preparation.ipynb`. It takes one row per `Source PDF` and `Start Page` from `all_manifests_as_written_validated.csv` and gives each the `Form Template` of the automatic manifest that starts on the same page. `analysis_manifests` counts the manifests not marked `Is Duplicate`; `forms_submitted` also counts the duplicates of `CAG018001` forms.
-- **Manuscript:** Table S1 (`forms_submitted_pct`) and Fig. S1b. `analysis/Analysis.ipynb` cell 5 (Figure S1 block) draws Fig. S1b from `template_id` and `analysis_manifests`, dropping the `Total` row and templates with a count of 0, which leaves 17 templates.
+- **Manuscript:** Table S1 (`analysis_pct`) and Fig. S1b. `analysis/Analysis.ipynb` cell 5 (Figure S1 block) draws Fig. S1b from `template_id` and `analysis_manifests`, dropping the `Total` row and templates with a count of 0, which leaves 17 templates.
 
 | Field | Description |
 |---|---|
