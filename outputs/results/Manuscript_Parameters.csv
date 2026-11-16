@@ -152,9 +152,13 @@ PctDryStorage,8.5,8.547654872591956,result,Section 3.4 and Figure 5,dry storage 
 ExportGapTons,"19,746",19746.213613707652,result,Section 3.4 and Figure 5,reported export N not documented in manifests (tons),"cell 3, _exp_gap_lb"
 PctExportsManifestedLow,31,0.3105771988731727,result,Section 3.4 and Figure 5,"manifested share of reported export N, low N contents","cell 3, _exp_cov_lmh"
 PctExportsManifestedHigh,92,0.9190499998070915,result,Section 3.4 and Figure 5,"manifested share of reported export N, high N contents","cell 3, _exp_cov_lmh"
+ExportGapTonsLowContent,"30,168",30167.545174068855,result,Section 3.4 and Figure 5,"reported export N not documented in manifests, low N contents (tons)","cell 3, _exp_gap_lb_lmh"
+ExportGapTonsHighContent,"3,542",3542.184539978981,result,Section 3.4 and Figure 5,"reported export N not documented in manifests, high N contents (tons)","cell 3, _exp_gap_lb_lmh"
 NDairiesFigFive,721,721,result,Section 3.4 and Figure 5,dairies in the Figure 5 sample,"cell 3, N_DAIRIES"
 NitrogenAvailableMillionLb,273,272513208.219,result,Section 3.4 and Figure 5,available N in the Figure 5 sample (million lb),"cell 3, TOTAL_N"
 PctUnaccountedFigFive,27.5,27.454695468879507,result,Section 3.4 and Figure 5,unaccounted-for share in Figure 5b,"cell 3, remainder_shown"
+PctUnknownLowContent,52.4,52.35857865598868,result,Section 3.4 and Figure 5,Unknown column of Figure 5b at the low N contents (percent),"cell 3, UNKNOWN_PCT_LMH"
+PctUnknownHighContent,34.4,34.36679320965886,result,Section 3.4 and Figure 5,Unknown column of Figure 5b at the high N contents (percent),"cell 3, UNKNOWN_PCT_LMH"
 NReportsDropped,63,63,result,SI Methods 0.1.1,reports received but not analysed,cells 3 and 6
 NDairiesGeocoded,767,767,result,SI Methods 0.1.1,dairies with a geocoded address,"cell 5, _geo['lat']"
 NManifestsAutoFound,"1,169",1169,result,SI Methods 0.1.1,manifests found by the keyword search,cell 6

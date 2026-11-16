@@ -33,7 +33,7 @@ import requests
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))) + os.sep
 REPORT_FILE = (ROOT + "outputs/review/annual-reports/"
-               "Dairy_Report_Summary_Region_5_2024_with_source_pdf_scraping.csv")
+               "Dairy_Annual_Report_Summary_Table_Region_5_2024.csv")
 PLACE_SHP = (ROOT + "data/geospatial-data/CA_Census_Place/"
              "cb_2024_06_place_500k.shp")
 MANIFEST_FILE = ROOT + "outputs/results/routing/processed_manure_manifests_analysis.geojson"

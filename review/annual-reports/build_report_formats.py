@@ -22,7 +22,7 @@ REPO = os.path.dirname(os.path.dirname(HERE))
 sys.path.insert(0, f"{HERE}/scraper")
 
 PDF_ROOT = os.path.join(REPO, "data", "annual-reports")
-SUMMARY = f"{REPO}/outputs/review/annual-reports/Dairy_Report_Summary_Region_5_2024_with_source_pdf_scraping.csv"
+SUMMARY = f"{REPO}/outputs/review/annual-reports/Dairy_Annual_Report_Summary_Table_Region_5_2024.csv"
 OUT = f"{REPO}/outputs/review/annual-reports/Annual_Report_Formats.csv"
 
 # Dropped before comparing two filenames: street types, compass points, the

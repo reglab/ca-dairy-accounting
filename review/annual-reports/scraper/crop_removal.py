@@ -18,7 +18,7 @@ import crops, geom, ias, ocr, pipeline, standard
 # Working directory for the run: the review folder that contains this package.
 S = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REPO = pipeline.REPO
-TARGET = f"{REPO}/outputs/review/annual-reports/Dairy_Report_Summary_Region_5_2024_with_source_pdf_scraping.csv"
+TARGET = f"{REPO}/outputs/review/annual-reports/Dairy_Annual_Report_Summary_Table_Region_5_2024.csv"
 FORMATS = f"{REPO}/outputs/review/annual-reports/Annual_Report_Formats.csv"
 PDF_ROOT = pipeline.PDF_ROOT
 OUT_CSV = f"{S}/crop_removal_extracted.csv"

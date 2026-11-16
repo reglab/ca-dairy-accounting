@@ -15,6 +15,10 @@ jupyter lab Analysis.ipynb                        # then Restart & Run All, runs
 
 It writes every generated figure in `outputs/results/figures/` (PNG and EPS), every table in `outputs/results/tables/` (including the SI tables in LaTeX, `SI_Tables.md`), and the manuscript's numbers as LaTeX macros (`outputs/results/Manuscript_Parameters.tex`), from the review outputs in `outputs/review/` and the routing files in `outputs/results/routing/`. To regenerate those inputs as well, from the annual-report and manifest PDFs through the routing, follow the detailed directions in [Reproducing the results, step by step](#reproducing-the-results-step-by-step).
 
+Extracted data from 2024 annual reports (dairy names, source PDFs, herd size, and nitrogen generation, application and exports are available in `outputs/review/annual-reports/Dairy_Annual_Report_Summary_Table_Region_5_2024.csv`. 
+
+Extracted data from 2024 manure and wastewater transport manifests (origin dairy, destination, quantity) are available in `outputs/review/annual-reports/processed_manure_manifests.csv` and `outputs/review/annual-reports/processed_wastewater_manifests.csv`, respectively.
+
 ## Contents
 
 - [Quick start]
@@ -124,7 +128,7 @@ Run each notebook from top to bottom in a fresh kernel (Restart & Run All), from
 2. post-process (`results_final.pkl`);
 3. read facility-wide crop nitrogen removal (`crop_removal_extracted.csv`);
 4. build the interactive review page (`Dairy_Report_Scrape_Review.html`, Figure S2) and review every row by hand (`outputs/review/annual-reports/scrape_review.csv`);
-5. apply the reviewed rows to `outputs/review/annual-reports/Dairy_Report_Summary_Region_5_2024_with_source_pdf_scraping.csv`;
+5. apply the reviewed rows to `outputs/review/annual-reports/Dairy_Annual_Report_Summary_Table_Region_5_2024.csv`;
 6. tally the form each report used (`Annual_Report_Formats.csv`, Figure S1a).
 
 The published files are already in place. Do not use Run All: the scrape cells rewrite the shipped intermediates, and the apply cell rewrites the analysis input. Several steps read the CSV that step 5 writes, so the published files came from repeating steps 5 → 6 → 3 → 4 → 5. The pickles and `crop_removal_extracted.csv` record each PDF under its original OneDrive path; `scraper/pipeline.local_pdf` maps those paths onto `data/annual-reports/`.
@@ -166,7 +170,7 @@ cd analysis
 jupyter lab Analysis.ipynb     # JupyterLab: see Setup. Then Restart & Run All
 ```
 
-`analysis/Analysis.ipynb` takes about 80 seconds with the exposure caches. It writes every file in `outputs/results/figures/` except Figures 1, S2, S3 and S6 (each figure as a PNG and an EPS), every file in `outputs/results/tables/`, `outputs/results/Manuscript_Parameters.tex` and `.csv`, and `outputs/review/manifests/Unmatched_Destination_Review_Sample.csv`. It stops with an error if any input is missing, rather than skipping a figure.
+`analysis/Analysis.ipynb` takes about 80 seconds with the exposure caches. It writes every file in `outputs/results/figures/` except Figures 1, S2, S3 and S6 (each figure as a PNG and an EPS), every file in `outputs/results/tables/`, and `outputs/results/Manuscript_Parameters.tex` and `.csv`. It stops with an error if any input is missing, rather than skipping a figure.
 
 The two files in `outputs/results/routing/pair_cache/` cache the most expensive step, the intersection of the 500 m road buffers with block groups and Census places. They are used only while they are newer than `network_with_hauls_v13.gpkg`; otherwise they are rebuilt (several minutes). Because the folder name sorts after the network file, a git checkout writes them later and keeps them valid. All outputs are identical between runs in the pinned environment.
 
@@ -253,7 +257,7 @@ Each row is one of the 20 destinations that received the most manure. Destinatio
 | % of tonnage | Tons as a percentage of all tonnage on manifests with a non-blank destination key (%). |
 | Cumulative % | Running total of `% of tonnage` from rank 1 down (%). |
 | Address form | The Figure 2b address class of the receiver's records, by tonnage: `street`, `PO box`, or `place` for a key with no house number, such as "EL NIDO COYOTE RD". |
-| In report set | `yes` if, for any manifest under this key, the destination street key (house number plus the next two words, normalised) matches the address of a dairy that filed a 2024 annual report (`Dairy_Report_Summary_Region_5_2024_with_source_pdf_scraping.csv`). Otherwise `no`. |
+| In report set | `yes` if, for any manifest under this key, the destination street key (house number plus the next two words, normalised) matches the address of a dairy that filed a 2024 annual report (`Dairy_Annual_Report_Summary_Table_Region_5_2024.csv`). Otherwise `no`. |
 
 #### outputs/results/tables/Table_S7_Longest_Routes.csv
 
@@ -689,24 +693,6 @@ Each row is one manual verdict from the geocode review. It covers either one geo
 | verdict | `True` means the geocode is correct or the route is OK. `False` means the geocode is wrong or the routing failed: 13 origin, 192 destination and 153 route rows are `False`. |
 | reviewed_utc | Time the verdict was recorded, as an ISO 8601 UTC timestamp (e.g. `2026-09-26T06:10:08.163Z`). |
 
-#### outputs/review/manifests/Unmatched_Destination_Review_Sample.csv
-
-Each row is one manure manifest record whose destination is a street address that does not match the street key of any dairy in the 2024 annual-report roster. A street address here means not blank, not a PO box, and containing a house-number street key. The sample takes up to 8 records per destination type (40 ÷ 5 types), largest tonnage first, and rows are sorted by `Tons` in descending order. The file has 40 rows, and one address can appear on several rows.
-
-- **Producer:** `analysis/Analysis.ipynb` cell 5 (banner `WHERE THE REGULATORY RECORD ENDS`). It is built from `processed_manure_manifests.csv` and the roster `outputs/review/annual-reports/Dairy_Report_Summary_Region_5_2024_with_source_pdf_scraping.csv` (every dairy that filed a 2024 report).
-- **Manuscript:** not in the manuscript. It is a worklist for checking by hand the destination-to-roster match behind the traceability shares that cell prints.
-
-| Field | Description |
-|---|---|
-| Source PDF | Annual-report PDF name of the manifest, from `processed_manure_manifests.csv`. |
-| Origin Dairy Name | Exporting dairy as written on the manifest. |
-| Destination type | `Destination Type (Standardized)` reduced to `Farmer`, `Broker`, `Composting Facility`, `Blank` or `Other`. The sample is stratified on this column. |
-| Destination Address Final | Destination address from `processed_manure_manifests.csv`. |
-| Normalised | The same address upper-cased, with every run of non-alphanumeric characters replaced by a space. |
-| Street key | House number plus the next two words, in lower case with ave/avenue → `av`, road → `rd`, street → `st`. It uses the leading house number, or the first qualifying number later in the text (5-digit ZIPs and numbered road names are skipped). This is the key compared against roster addresses. |
-| Loose match found | TRUE if the house number and any later word of `Normalised` occur together in one roster dairy address. This looser test tolerates spelling variants. FALSE on all 40 current rows. |
-| Tons | `Total Manure Amount (tons)` of the record, in US short tons; a missing value counts as 0. |
-
 ### Manifest extraction files (`outputs/review/manifests/`, `review/manifests/helpers/`, `data/manifests/`)
 
 #### outputs/review/manifests/2024_files_by_template.csv
@@ -1005,7 +991,7 @@ data/manifests/R5/
 
 ### Annual-report review files (`outputs/review/annual-reports/`, `review/annual-reports/`)
 
-#### outputs/review/annual-reports/Dairy_Report_Summary_Region_5_2024_with_source_pdf_scraping.csv
+#### outputs/review/annual-reports/Dairy_Annual_Report_Summary_Table_Region_5_2024.csv
 
 Each row is one 2024 dairy annual report (one facility) in the 795-report analysis sample, keyed on `Source PDF`. 580 rows come from the earlier parse by Robertson et al. 2026 (`Scraped August 2026 = False`). The other 215 were scraped and hand-reviewed in this repository (`True`).
 
@@ -1246,7 +1232,7 @@ This is the earlier parse of 2024 Region 5 dairy annual reports by Robertson et 
 - **Producer:** external (Robertson et al. 2026). No code in this repository writes it.
 - **Read by:**
   - `review/manifests/helpers/Dairy_Report_Summary_Region_5_2024_with_source_pdf.csv` is a copy with 71 `Source PDF` names edited to match the PDF file names. `manifest_preparation.ipynb` reads that copy, not this file.
-  - `review/annual-reports/backup_before_append.csv` is a copy with identical values. `scraper/apply_rows.py` rebuilds `outputs/review/annual-reports/Dairy_Report_Summary_Region_5_2024_with_source_pdf_scraping.csv` from that copy. It drops the 7 broken rows and 1 duplicate described below, then appends 215 newly scraped reports. `scraper/finalize.py` fits its UCCE per-head factors on the same copy. The analysis reads the extended file, not this one.
+  - `review/annual-reports/backup_before_append.csv` is a copy with identical values. `scraper/apply_rows.py` rebuilds `outputs/review/annual-reports/Dairy_Annual_Report_Summary_Table_Region_5_2024.csv` from that copy. It drops the 7 broken rows and 1 duplicate described below, then appends 215 newly scraped reports. `scraper/finalize.py` fits its UCCE per-head factors on the same copy. The analysis reads the extended file, not this one.
 - **Manuscript:** this is the source of the "580 dairies parsed by Robertson et al 2026" in §2.1 and SI Methods 0.1.1 (588 rows − 7 − 1 = 580). It is not cited as a table.
 - **Known defects:**
   - 7 rows reuse `Source PDF` = `1008 N. Verduga Rd, Turlock 2024 Dairy AR.pdf`, have `Dairy Name` = "CENTRAL VALLEY REGION" and have no address.

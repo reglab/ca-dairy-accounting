@@ -7,7 +7,7 @@ from review_html import TEMPLATE
 # Working directory for the run: the review folder that contains this package.
 S = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REPO = pipeline.REPO
-TARGET = f"{REPO}/outputs/review/annual-reports/Dairy_Report_Summary_Region_5_2024_with_source_pdf_scraping.csv"
+TARGET = f"{REPO}/outputs/review/annual-reports/Dairy_Annual_Report_Summary_Table_Region_5_2024.csv"
 OUT = S
 
 FIELDS = [("Dairy Name", False), ("Dairy Address", False)] + \

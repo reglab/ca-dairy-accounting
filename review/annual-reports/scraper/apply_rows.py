@@ -9,7 +9,7 @@ import pandas as pd
 import pipeline
 
 REPO = pipeline.REPO
-TARGET = f"{REPO}/outputs/review/annual-reports/Dairy_Report_Summary_Region_5_2024_with_source_pdf_scraping.csv"
+TARGET = f"{REPO}/outputs/review/annual-reports/Dairy_Annual_Report_Summary_Table_Region_5_2024.csv"
 OUT = f"{REPO}/review/annual-reports"
 
 FLAG = "Scraped August 2026"
