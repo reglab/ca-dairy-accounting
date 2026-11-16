@@ -24,7 +24,7 @@ R5-2007-0035 Variant 2 & D & R5-2007-0035 & 2 & 5.6\% & 348 E Monte Vista Rd Cer
 \hline
 R5-2007-0035 Variant 3 & N/A & R5-2007-0035 & 2 & 0.1\% & 17399 E Avena Rd Escalon 2024 Dairy AR \\
 \hline
-R5-2007-0035 Variant 4 & D & R5-2007-0035 & 1 & 2.6\% & 2023AR\_F \& L Barcellos \#2\_7585 Avenue 152\_W Tulare \\
+R5-2007-0035 Variant 4 & D & R5-2007-0035 & 1 & 2.6\% & 2024AR\_F \& L Barcellos \#2\_7585 Avenue 152\_W Tulare \\
 \hline
 R5-2007-0035 Variant 5 & D & R5-2007-0035 & 1 & 2.2\% & 2024AR\_Faial Farms 2 Dairy \\
 \hline
